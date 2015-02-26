@@ -1,0 +1,10 @@
+{%if latest_article_list%}
+	<ul>
+		{%for article in latest_article_list%}
+		<li><a href="/pub/{{article.id}}/">{{article.title}}</a></li>
+		{%endfor%}
+	</ul>
+{%else%}
+	<p>No articles are available.</p>
+{%endif%}
+in index.html

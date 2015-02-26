@@ -1,0 +1,69 @@
+from django.db import models
+import datetime
+from django.utils import timezone
+
+# Create your models here.
+
+
+class Poll(models.Model):
+    question = models.CharField(max_length=200)
+    pub_date = models.DateTimeField('date published')
+
+    def __unicode__(self):
+        return self.question
+
+    def was_published_recently(self):
+        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+
+
+class Choice(models.Model):
+    poll = models.ForeignKey(Poll)
+    choice = models.CharField(max_length=200)
+    votes = models.IntegerField()
+
+    def __unicode__(self):
+        return self.choice
+
+
+class Journal(models.Model):
+    name = models.CharField(max_length=200)
+    publisher = models.CharField(max_length=200)
+
+    def __unicode__(self):
+        return self.name
+
+
+class Author(models.Model):
+    e_givenname = models.CharField(max_length=200)
+    e_surname = models.CharField(max_length=200)
+    j_givenname = models.CharField(max_length=200)
+    j_surname = models.CharField(max_length=200)
+
+    def __unicode__(self):
+        return self.e_givenname
+
+
+class Language(models.Model):
+    label = models.CharField(max_length=200)
+
+    def __unicode__(self):
+        return self.label
+
+
+class Article(models.Model):
+    title = models.CharField(max_length=200)
+    year = models.IntegerField(default=0)
+    city = models.CharField(max_length=200)
+    country = models.CharField(max_length=200)
+    month = models.IntegerField(default=0)
+    journal = models.ForeignKey(Journal)
+    date = models.IntegerField(default=0)
+    volume = models.IntegerField(default=0)
+    number = models.IntegerField(default=0)
+    page = models.CharField(max_length=200)
+    authors = models.ManyToManyField(Author)
+    language = models.ForeignKey(Language)
+    check = models.BooleanField(default=0)
+
+    def __unicode__(self):
+        return self.title
