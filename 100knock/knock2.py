@@ -15,8 +15,8 @@ def knock12(m_filename):
 	col2=open("col2.txt","w")
 	m_lines=codecs.open(m_filename,"r","utf-8")
 	for line in m_lines:
-		col1.writelines(line[0:1].encode("utf-8")+"\n")
-		col2.writelines(line[1:2].encode("utf-8")+"\n")
+		col1.write(line[0:1].encode("utf-8")+"\n")
+		col2.write(line[1:2].encode("utf-8")+"\n")
 	col1.close()
 	col2.close()
 
@@ -25,11 +25,16 @@ def knock13(m_filename):
 	m_col2=codecs.open("col2.txt","r","utf-8")
 	m_col3=open("col3.txt","w")
 	count=0
-	while m_col1 and m_col2:
-		print count+1
+	while True:
 		m_line_col1=m_col1.readline()
 		m_line_col2=m_col2.readline()
-		m_col3.write(m_line_col1.encode("utf-8")+m_line_col2.encode("utf-8")+"\n")
+		print m_line_col1.encode("utf-8")
+		print m_line_col2.encode("utf-8")
+		count = count+1
+		print count
+		m_col3.write(m_line_col1.replace("\n","").encode("utf-8")+"\t"+m_line_col2.encode("utf-8"))
+		if not(m_line_col1 and m_line_col2):
+			break
 	m_col1.close()
 	m_col2.close()
 	m_col3.close()
