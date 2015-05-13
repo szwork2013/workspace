@@ -2,6 +2,19 @@
 # -*- coding: utf-8 -*-
 
 import codecs
+import json as json
+ 
+def pp(obj):
+  if isinstance(obj, list) or isinstance(obj, dict):
+    orig = json.dumps(obj, indent=4)
+    print eval("u'''%s'''" % orig).encode('utf-8')
+  else:
+    print obj
+
+def linereader_knock2(m_filename):
+	m_file_open=codecs.open(m_filename,"r","utf-8")
+	m_lines=m_file_open.readlines()
+	return m_lines
 
 def knock10(m_filename):
 	print sum(1 for line in open(m_filename))
@@ -40,20 +53,66 @@ def knock13(m_filename):
 	m_col3.close()
 
 	#m_lines=codecs.open(m_filename,"r","utf-8")
+def knock14(m_filename,m_show_line_head):
+	m_count=0
+	for line in open(m_filename):
+		print line
+		m_count=m_count+1
+		if m_count >= m_show_line_head:
+			break
+
+def knock15(m_filename,m_show_line_tail):
+	m_count=0
+	m_file_open=open(m_filename)
+	#関数作ればよかった……開いたファイルをリストにしてループで扱いやすくしている
+	m_lines=m_file_open.readlines()
+	m_lines.reverse()
+	for line in m_lines:
+		print line
+		m_count=m_count+1
+		if m_count >= m_show_line_tail:
+			break
+
+def knock16(m_filename,m_num_split):
+	m_count=0
+	m_num_file=1
+	m_file_knock16=open("file_knock16_1.txt","w")
+	m_lines=linereader_knock2(m_filename)
+	for line in m_lines:
+		m_file_knock16.write(line.encode("utf-8"))
+		#print line.encode("utf-8")
+		m_count=m_count+1
+		if m_count >= m_num_split:
+			m_count=0
+			m_file_knock16.close()
+			m_num_file=m_num_file+1
+			m_file_knock16=open("file_knock16_"+str(m_num_file),"w")
+
+#http://d.hatena.ne.jp/t-fridge/20080323/1206217930
+def knock17(m_filename):
+	m_lines=linereader_knock2(m_filename)
+	m_list_initial=[]
+	for line in m_lines:
+		m_list_initial.append(line[0:1].encode("utf-8"))
+	pp(list(set(m_list_initial)))
 
 
-filename="hightemp.txt"
+g_filename="hightemp.txt"
 print "10"
 #knock10(filename)
 print "11"
 #knock11(filename)
 print "12"
-knock12(filename)
+knock12(g_filename)
 print "13"
-knock13(filename)
+#knock13(filename)
 print "14"
+#knock14(filename,5)
 print "15"
+#knock15(g_filename,5)
 print "16"
+#knock16(g_filename,10)
 print "17"
+#knock17(g_filename)
 print "18"
 print "19"
