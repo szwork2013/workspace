@@ -3,6 +3,7 @@
 
 import codecs
 import json as json
+from collections import Counter
  
 #各地域の最高気温入れるオブジェクト
 class HighTemp:
@@ -17,7 +18,7 @@ def print_encode8(string):
 	print string.encode("utf-8")
 
 
- #リストや辞書の中身を表示する
+ #日本語を含んだリストや辞書の中身を表示する
 def pp(obj):
   if isinstance(obj, list) or isinstance(obj, dict):
     orig = json.dumps(obj, indent=4)
@@ -128,6 +129,14 @@ def knock18(m_filename):
 	for temp_high in m_list_hightemp_sorted:
 		print temp_high.name_prefecture.encode("utf-8")+" "+temp_high.name_region.encode("utf-8")+" "+temp_high.temp_high.encode("utf-8")+" "+temp_high.date.encode("utf-8")
 
+def knock19(m_filename):
+	m_lines=linereader_knock2(m_filename)#hightempをリスト化してもらう
+	m_list_initial=[]#hightempの第一要素のリスト
+	#m_list_initialを作成
+	for line in m_lines:
+		m_list_initial.append(line.encode("utf-8").split()[0])
+	m_list_initial_frecuency=Counter(m_list_initial).most_common()#m_list_initialを要素数順に並び替える
+	pp(m_list_initial_frecuency)#m_list_initialを表示
 
 
 g_filename="hightemp.txt"
@@ -146,7 +155,8 @@ print "15"
 print "16"
 #knock16(g_filename,10)
 print "17"
-knock17(g_filename)
+#knock17(g_filename)
 print "18"
-knock18(g_filename)
+#knock18(g_filename)
 print "19"
+knock19(g_filename)
