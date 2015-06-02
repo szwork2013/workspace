@@ -22,6 +22,7 @@ def knock20():
 			break
 	return m_text
 
+#カテゴリー名を含む行を抽出する
 def knock21(m_text):
 	m_buffer=StringIO.StringIO(m_text)
 	m_lines=m_buffer.readlines()
@@ -31,22 +32,33 @@ def knock21(m_text):
 		if "Category" in m_line:
 			print m_line
 	
+#カテゴリー名を抽出する
+def knock22(m_text):
+	m_list_categoryname=get_list_re(m_text,r"\A\[\[Category:(?P<name_category>.+?)\]\]","name_category")
+	pp(m_list_categoryname)
 
-def knock22():
+#セクション名とそのレベルを表示する
+def knock23(m_text):
+	m_list_level_section=get_list_re(m_text,r"\A(?P<level_section>=+)(?P<name_section>.+?)=+","level_section")
+	m_list_name_section=get_list_re(m_text,r"\A(?P<level_section>=+)(?P<name_section>.+?)=+","name_section")
+	# for m_line in m_list_level_section:
+	# 	m_line=len(m_line)
+	# m_dict_section=dict(zip(m_list_name_section,m_list_level_section))
+	for m_level_section,m_name_section in zip(m_list_level_section,m_list_name_section):
+		print m_name_section," is level ",len(m_level_section)
+	#pp(m_dict_section)
+
+def knock24(m_text):
 	pass
-def knock23():
+def knock25(m_text):
 	pass
-def knock24():
+def knock26(m_text):
 	pass
-def knock25():
+def knock27(m_text):
 	pass
-def knock26():
+def knock28(m_text):
 	pass
-def knock27():
-	pass
-def knock28():
-	pass
-def knock29():
+def knock29(m_text):
 	pass
 
 if __name__=="__main__":
@@ -54,13 +66,13 @@ if __name__=="__main__":
 	print "あいうえお　愛"
 	print sys.getdefaultencoding()
 	m_text=knock20()
-	knock21(m_text)
-	knock22()
-	knock23()
-	knock24()
-	knock25()
-	knock26()
-	knock27()
-	knock28()
-	knock29()
+	#knock21(m_text)
+	#knock22(m_text)
+	knock23(m_text)
+	knock24(m_text)
+	knock25(m_text)
+	knock26(m_text)
+	knock27(m_text)
+	knock28(m_text)
+	knock29(m_text)
 

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import sys,json,codecs,re
+import sys,json,codecs,re,StringIO
 
 #デフォルトのエンコーディングをutf-8にする		
 reload(sys)
@@ -14,7 +14,7 @@ if __name__=="__main__":
 	pass
 
 
-#ファイルを行単位で読み込んでリストとして返す
+#ファイルを行単位で読み込んでリストとして返す()
 def read_line(m_filename):
 	m_file_open=codecs.open(m_filename,"r","utf-8")
 	m_lines=m_file_open.readlines()
@@ -22,10 +22,35 @@ def read_line(m_filename):
 	return m_lines
 
 #与えた正規表現に該当する文字列をリストにして返す
-def get_list_re(m_expression):
-	m_list=[]
+#m_text:検索する文字列
+#m_expression:与える正規表現
+#m_num_group:抽出するグループ番号
+#m_flag_match:>0でmatch検索。それ以外はsearch検索
+def get_list_re(m_text,m_expression,m_num_group=0,m_flag_match=0):
+	m_buffer=StringIO.StringIO(m_text)
+	m_lines=m_buffer.readlines()
+	m_list_hit=[]
+	if m_flag_match:
+		for m_line in m_lines:
+			m_text_hit=re.match(m_expression,m_line)
+			if m_text_hit:
+				m_list_hit.append(m_text_hit.group(m_num_group))
+	else:
+		for m_line in m_lines:
+			m_text_hit=re.search(m_expression,m_line)
+			if m_text_hit:
+				m_list_hit.append(m_text_hit.group(m_num_group))
+	return m_list_hit
 
- #日本語を含んだリストや辞書をプリティプリントする	
+"""
+バッファで統一したほうが良かったかも。オープンはまた別の関数で。text_to_buffとかfile_to_buffとかでバッファに変換
+いやいあ、バッファにするのはreadlineが使いたいから
+そんな一時的な理由でするのも
+でも、read_lineはバッファに対しての処理なんだし、どういう形にすればよかったんだろう？
+ただ、あんまり効率的にし過ぎるとわかりにくいコードになりそうだし、時間もかかるし
+あと、渡すファイルは統一しなくていいんじゃないか？そこにこだわりだすと大変そう
+"""
+ #日本語を含んだリストや辞書をプリティプリントする
 def pp(obj):
   if isinstance(obj, list) or isinstance(obj, dict):
     orig = json.dumps(obj, indent=4)
@@ -44,3 +69,5 @@ def read_json(m_filename):
 			m_data_json.append(json.loads(m_line))
 	m_stream.close()
 	return m_data_json
+
+#
