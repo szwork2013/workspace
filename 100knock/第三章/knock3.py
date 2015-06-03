@@ -6,6 +6,7 @@ aaa
 import sys
 import StringIO
 from function_common import *
+import pprint
 
 
 g_article_england=[]
@@ -48,10 +49,25 @@ def knock23(m_text):
 		print m_name_section," is level ",len(m_level_section)
 	#pp(m_dict_section)
 
+#文中のメディアファイルを抽出する
 def knock24(m_text):
-	pass
+	m_list_media=get_list_re(m_text,u"ファイル:(?P<name_file>.+?)\|",u"name_file")
+	pp(m_list_media)
+
+#基本情報テンプレートのフィールドと値を抜き出す(ちょっとうまくいってない。抜き出したあとの文章の抜き出し)
 def knock25(m_text):
-	pass
+	m_list_baseinfo=get_list_re(m_text,u"^\{\{基礎情報 国(?P<baseinfo>.+?)\}\}$",1,1)
+	#for line in m_list_baseinfo:
+	#	print line.decode("utf-8")
+	m_list_field_baseinfo=get_list_re(m_text,u"^\|(?P<name_field>.+?)=(?P<name_value>.+?)$","name_field")
+	m_list_value_baseinfo=get_list_re(m_text,u"^\|(?P<name_field>.+?)=(?P<name_value>.+?)$","name_value")
+	print m_list_field_baseinfo
+	m_dict_baseinfo=dict(zip(m_list_field_baseinfo,m_list_value_baseinfo))
+	m_keys_baseinfo=m_dict_baseinfo.keys()
+	for m_key in m_keys_baseinfo:
+		print m_key,":",m_dict_baseinfo[m_key]
+
+	
 def knock26(m_text):
 	pass
 def knock27(m_text):
@@ -68,8 +84,8 @@ if __name__=="__main__":
 	m_text=knock20()
 	#knock21(m_text)
 	#knock22(m_text)
-	knock23(m_text)
-	knock24(m_text)
+	#knock23(m_text)
+	#knock24(m_text)
 	knock25(m_text)
 	knock26(m_text)
 	knock27(m_text)

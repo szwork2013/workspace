@@ -25,16 +25,20 @@ def read_line(m_filename):
 #m_text:検索する文字列
 #m_expression:与える正規表現
 #m_num_group:抽出するグループ番号
-#m_flag_match:>0でmatch検索。それ以外はsearch検索
-def get_list_re(m_text,m_expression,m_num_group=0,m_flag_match=0):
+#m_flag_multi:0で行検索。1で複数行検索
+def get_list_re(m_text,m_expression,m_num_group=0,m_flag_multi=0):
 	m_buffer=StringIO.StringIO(m_text)
 	m_lines=m_buffer.readlines()
 	m_list_hit=[]
-	if m_flag_match:
-		for m_line in m_lines:
-			m_text_hit=re.match(m_expression,m_line)
-			if m_text_hit:
-				m_list_hit.append(m_text_hit.group(m_num_group))
+
+
+
+	if m_flag_multi>0:
+		# for m_line in m_lines:
+		# 	m_text_hit=re.search(m_expression,m_line,re.MULTILINE)
+		m_text_hit=re.search(m_expression,m_text.decode("utf-8"),re.MULTILINE|re.DOTALL)
+		if m_text_hit:
+			m_list_hit.append(m_text_hit.group(m_num_group))
 	else:
 		for m_line in m_lines:
 			m_text_hit=re.search(m_expression,m_line)
@@ -50,7 +54,7 @@ def get_list_re(m_text,m_expression,m_num_group=0,m_flag_match=0):
 ただ、あんまり効率的にし過ぎるとわかりにくいコードになりそうだし、時間もかかるし
 あと、渡すファイルは統一しなくていいんじゃないか？そこにこだわりだすと大変そう
 """
- #日本語を含んだリストや辞書をプリティプリントする
+#日本語を含んだリストや辞書をプリティプリントする
 def pp(obj):
   if isinstance(obj, list) or isinstance(obj, dict):
     orig = json.dumps(obj, indent=4)
