@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import sys,json,codecs,re,StringIO
+import sys,json,codecs,re,StringIO,urllib,urllib2
+from xml.dom.minidom import parse as parseXML
 
 #デフォルトのエンコーディングをutf-8にする		
 reload(sys)
@@ -31,8 +32,6 @@ def get_list_re(m_text,m_expression,m_num_group=0,m_flag_multi=0):
 	m_lines=m_buffer.readlines()
 	m_list_hit=[]
 
-
-
 	if m_flag_multi>0:
 		# for m_line in m_lines:
 		# 	m_text_hit=re.search(m_expression,m_line,re.MULTILINE)
@@ -45,6 +44,37 @@ def get_list_re(m_text,m_expression,m_num_group=0,m_flag_multi=0):
 			if m_text_hit:
 				m_list_hit.append(m_text_hit.group(m_num_group))
 	return m_list_hit
+
+#名前は一時的、上のをバージョンアップし、複数の型と、グループに対応させた
+def get_list_re2(m_object,m_expression,m_num_group):
+	m_list_return=[]
+	if isinstance(m_object, list):
+		m_pattern=re.compile(m_expression)
+		m_lines=m_object
+		for m_line in m_lines:
+			m_text_hit=m_pattern.search(m_line)
+			if isinstance(m_num_group, list):
+				if m_text_hit:
+					m_text_extraction=map(str,m_text_hit.group(m_num_group))
+				else:
+					m_text_extraction=str(m_line)
+				m_list_return.append(m_text_extraction)
+		return m_list_return
+
+
+#正規表現にヒットした文字列を削除して返す(テキスト型、リスト型、どちらでも対応できるようにした)
+def erase_list_re(m_object,m_expression):
+	m_list_erased=[]
+	if isinstance(m_object, str):
+		pass
+	if isinstance(m_object, list):
+		m_pattern=re.compile(m_expression)
+		for m_line in m_object:
+			m_list_erased.append(m_pattern.sub('',m_line))
+		return m_list_erased
+	#m_pattern=re.compile(m_expression)
+	#for m_line in m_list:
+	#	pass
 
 """
 バッファで統一したほうが良かったかも。オープンはまた別の関数で。text_to_buffとかfile_to_buffとかでバッファに変換
@@ -62,6 +92,12 @@ def pp(obj):
   else:
     print obj
 
+#↑がエラー吐くこと増えたのでリスト表示用関数をもう一個
+def pplist(m_list):
+	if isinstance((m_list), list):
+		for m_line in m_list:
+			print m_line.decode("utf-8")
+
 #JSONファイルを辞書のリストにして返す
 def read_json(m_filename):
 	m_data_json=[]
@@ -74,4 +110,39 @@ def read_json(m_filename):
 	m_stream.close()
 	return m_data_json
 
-#
+#wikipedeiaのハンドラー
+#http://d.hatena.ne.jp/artgear/20130630/class_to_use_wikipedia_api
+class WikiHandler(object):
+    def __init__(self, parameters, titles=None, url=URL):
+        self._url = url if url.endswith('?') else url + '?'
+
+        self._parameters = {}
+        self._parameters.update(BASIC_PARAMETERS)
+        self._parameters.update(parameters)
+
+        if titles:
+            self._parameters['titles'] = titles
+
+        self.rawdata = self._urlfetch(self._parameters)
+
+        if self._parameters['format'] == 'xml':
+            self.dom = parseXML(self.rawdata)
+            print 'DOM ready.'
+
+    def _urlfetch(self, parameters):
+        parameters_list = []
+
+        for key, val in parameters.items():
+            if isinstance(val, basestring):
+                val = val.encode('utf-8')
+            else:
+                val = str(val)
+
+            val = urllib.quote(val)
+            parameters_list.append('='.join([key, val]))
+
+        url = self._url + '&'.join(parameters_list)
+
+        print 'Accessing...\n', url
+
+        return urllib2.urlopen(url, timeout=20)
