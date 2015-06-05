@@ -1,4 +1,9 @@
 from django.conf.urls import patterns, include, url
+from django.conf.urls import *
+from rest_framework import routers
+from pub import views
+
+router=routers.DefaultRouter()
 
 urlpatterns = patterns('pub.views',
                        url(r'^$', 'index'),

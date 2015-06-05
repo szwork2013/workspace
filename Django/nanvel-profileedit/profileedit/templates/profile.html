@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+    <link rel="stylesheet" href="http://github.com/Valums-File-Uploader/file-uploader/blob/master/client/fileuploader.css">
+    <link rel="stylesheet" href="{% static 'css/core.css' %}">
+{% endblock css %}
+
+{% block js %}
+    {{ block.super }}
+    <script>
+    vars = {
+        profileUrl: '{% url "profile-detail" profile.pk %}',
+        photoUploadUrl: '{% url "photo-upload" %}',
+    }
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://raw.github.com/Valums-File-Uploader/file-uploader/master/client/fileuploader.js" charset="utf-8"></script>
+    <script type="text/javascript" src="{% static 'js/core.js' %}" charset="utf-8"></script>
+{% endblock js %}
+
+{% block content %}
+<div class="content" ng-controller="profileEditCtrl">
+    <div class="pure-alert pure-alert-success" ng-show="data.success">
+        Updated!
+    </div>
+    <form class="pure-form pure-form-aligned" ng-submit="updateProfile()">
+        <fieldset>
+            <legend>Edit profile</legend>
+            <div class="pure-control-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Name" ng-model="data.name">
+            </div>
+            <div class="pure-controls">
+                <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+    <div class="photos">
+        <div class="photo" ng-repeat="photo in data.photos">
+            <img src="{$ photo.url $}" />
+        </div>
+    </div>
+    <div id="file-uploader" class="uploader">
+        <noscript>
+            <p>Please enable JavaScript to use file uploader.</p>
+        </noscript>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<title>My App</title>  
+
+		<link rel="stylesheet" href="{{ STATIC_URL }}lib/onsen/css/onsenui.css">  
+		<link rel="stylesheet" href="{{ STATIC_URL }}styles/app.css"/>
+		<link rel="stylesheet" href="{{ STATIC_URL }}styles/onsen-css-components-blue-basic-theme.css">  
+
+		<script src="{{ STATIC_URL }}lib/onsen/js/angular/angular.js"></script>    
+		<script src="{{ STATIC_URL }}lib/onsen/js/angular/angular.min.js"></script>
+		<script src="{{ STATIC_URL }}lib/onsen/js/onsenui.js"></script>    
+
+		<script src="{{ STATIC_URL }}cordova.js"></script>  
+		<script src="{{ STATIC_URL }}js/app.js"></script>  
+		<script src="{{ STATIC_URL }}static/js/helloWorld.js"></script>
+		<script>
+				ons.ready(function() {
+				});
+		</script>
+
+		<style>
+			.item {
+				padding: 10px;
+				line-height: 1;
+				}
+			.item-thum {
+				background-color: #ccc;
+				width: 50px;
+				height: 50px;
+				border-radius: 4px;
+				}
+			.item-title {
+				font-size: 15px;
+				font-weight: 500;
+				}
+			.item-desc {
+				font-size: 14px;
+				color: #666;
+				line-height: 1.3;
+				margin: 4px 0 0 0;
+				padding: 0 30px 0 0;
+				}
+			.item-label {
+				font-size: 12px;
+				color: #999;
+				float: right;
+				}
+			</style>
+	</head>
+
+	<body ng-controller="app-controller">
+		<h1 ng-controller="HelloWorldController">{{message}}</h1>
+		<ons-navigator>
+			<ons-page>
+				<ons-toolbar>
+					<div class="center">Master</div>
+				</ons-toolbar>
+				{%if latest_article_list%}
+				<ons-list ng-controller="Master-Controller">
+					<ul>
+						{%for article in latest_article_list%}
+						<li>
+								<ons-row>
+							<a href="/pub/{{article.id}}/">
+								{%for author in article.authors.all%}
+									{%if forloop.first %}{%elif forloop.last%}and{%else%},{%endif%}
+									{%ifequal article.language.label "English"%}{{author.e_givenname}}.{{author.e_surname}}{%endifequal%}
+									{%ifequal article.language.label "Japanese"%}{{author.j_givenname}}.{{author.j_surname}}{%endifequal%}
+								{%endfor%}	
+								:
+								<b>{{article.title}}</b>
+								,{{article.journal.publisher}}
+								,{{article.journal.name}}
+								{%if aritcle.volume > -1%},vol.{{article.volume}}{%endif%}
+								{%if article.number > -1%},no.{{aritcle.number}}{%endif%}
+								{%if article.page%},pp.{{article.page}}{%endif%}
+								,{{article.city}}
+								,{{article.country}}
+								,{{article.date}} {{article.month}} {{article.year}}
+						</a>
+						</ons-row>
+					</li>
+						{%endfor%}
+					</ul>
+				</ons-list>
+				{%else%}
+					<p>No articles are available.</p>
+				{%endif%}
+			</ons-page>
+		</ons-navigator>
+	</body>
+</html>

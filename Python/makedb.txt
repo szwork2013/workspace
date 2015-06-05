@@ -1,0 +1,1784 @@
+from pub.models import Article,Author,Journal,Language
+import datetime
+from django.utils import timezone
+english=Language(label="English")
+japanese=Language(label="Japanese")
+english.save()
+japanese.save()
+j1=Journal(publisher="Liu, C.-C. et al. (Eds.)",name=": Proc. of the 22nd International Conference on Computers in Education (ICCE2014)")
+j1.save()
+a1=Author(e_givenname="A",e_surname="Tanikawa")
+a1.save()
+a2=Author(e_givenname="R",e_surname="Okamoto")
+a2.save()
+a3=Author(e_givenname="A",e_surname="Kashihara")
+a3.save()
+a=Article(title="Presentation Reconstruction Method for Peer Review Support in Presentation Rehearsal",year=2014,city="Nara",country="Japan",month="December ",date=3 ,volume="-1",number="-1",page="361-366")
+a.save()
+a.language=english
+a.check=True
+a.journal=j1
+a.authors.add(a1)
+a.authors.add(a2)
+a.authors.add(a3)
+a.save()
+a4=Author(e_givenname="Y",e_surname="Miyoshi")
+a4.save()
+a5=Author(e_givenname="K",e_surname="Suzuki")
+a5.save()
+a6=Author(e_givenname="K",e_surname="Shiota")
+a6.save()
+a=Article(title="Evaluation of Difficulty Estimation for Learning Materials Recommendation",year=2014,city="Nara",country="Japan",month="December ",date=3 ,volume="-1",number="-1",page="71-76")
+a.save()
+a.language=english
+a.check=True
+a.journal=j1
+a.authors.add(a4)
+a.authors.add(a5)
+a.authors.add(a6)
+a.authors.add(a2)
+a.save()
+j2=Journal(publisher="",name="日本教育工学会論文誌")
+j2.save()
+a7=Author(j_givenname="計英",j_surname="金西")
+a7.save()
+a8=Author(j_givenname="弘幸",j_surname="光原")
+a8.save()
+a9=Author(j_givenname="康夫",j_surname="三好")
+a9.save()
+a10=Author(j_givenname="健二",j_surname="松浦")
+a10.save()
+a=Article(title="自学自習における学習意欲の維持へのTwitterボットの活用",year=2013,city="",country="",month="December ",date=None,volume="37(Suppl)",number="-1",page="69-72")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j2
+a.authors.add(a7)
+a.authors.add(a8)
+a.authors.add(a9)
+a.authors.add(a10)
+a.save()
+j3=Journal(publisher="",name="Proc. of The 17th International Conference on Computers in Education (ICCE2009)")
+j3.save()
+a11=Author(e_givenname="M",e_surname="Nakagawa")
+a11.save()
+a12=Author(e_givenname="K",e_surname="Kanenishi")
+a12.save()
+a13=Author(e_givenname="K",e_surname="Matsuura")
+a13.save()
+a14=Author(e_givenname="H",e_surname="Mitsuhara")
+a14.save()
+a15=Author(e_givenname="Y",e_surname="Yano")
+a15.save()
+a=Article(title="Authentication and Authorization Exchange for University Federation",year=2009,city="Hong Kong",country="",month="November ",date=30 ,volume="-1",number="-1",page="477-479")
+a.save()
+a.language=english
+a.check=True
+a.journal=j3
+a.authors.add(a11)
+a.authors.add(a12)
+a.authors.add(a13)
+a.authors.add(a4)
+a.authors.add(a14)
+a.authors.add(a15)
+a.save()
+a16=Author(j_givenname="和美",j_surname="嵯峨山")
+a16.save()
+a17=Author(j_givenname="健司",j_surname="久米")
+a17.save()
+a18=Author(j_givenname="純子",j_surname="松本")
+a18.save()
+a19=Author(j_givenname="米雄",j_surname="矢野")
+a19.save()
+a=Article(title="学生支援キャンパスSNSと学生の動向",year=2008,city="",country="",month="December ",date=None,volume="32(Suppl)",number="-1",page="53-56")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j2
+a.authors.add(a16)
+a.authors.add(a17)
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a9)
+a.authors.add(a18)
+a.authors.add(a19)
+a.save()
+a20=Author(j_givenname="知弘",j_surname="高木")
+a20.save()
+a=Article(title="大学間WEBサービス連携のためのShibbolethを用いた許可管理機能の実現",year=2008,city="",country="",month="December ",date=None,volume="32(Suppl)",number="-1",page="93-96")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j2
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a9)
+a.authors.add(a20)
+a.authors.add(a16)
+a.authors.add(a19)
+a.save()
+j4=Journal(publisher="",name="Proc. of ICCE2008")
+j4.save()
+a21=Author(e_givenname="K",e_surname="Sagayama")
+a21.save()
+a22=Author(e_givenname="K",e_surname="Kume")
+a22.save()
+a23=Author(e_givenname="J",e_surname="Minato")
+a23.save()
+a=Article(title="Application of Campus SNS for Supporting Students and Their Behavior",year=2008,city="Taipei",country="",month="October ",date=None,volume="-1",number="-1",page="581-586")
+a.save()
+a.language=english
+a.check=True
+a.journal=j4
+a.authors.add(a21)
+a.authors.add(a12)
+a.authors.add(a13)
+a.authors.add(a22)
+a.authors.add(a4)
+a.authors.add(a23)
+a.authors.add(a15)
+a.save()
+j5=Journal(publisher="",name="Proc. of ED-MEDIA2008")
+j5.save()
+a=Article(title="Characteristics and Method for Initial Activity on Campus SNS",year=2008,city="Wien",country="",month="June ",date=None,volume="-1",number="-1",page="936-945")
+a.save()
+a.language=english
+a.check=True
+a.journal=j5
+a.authors.add(a21)
+a.authors.add(a22)
+a.authors.add(a12)
+a.authors.add(a13)
+a.authors.add(a4)
+a.authors.add(a23)
+a.authors.add(a15)
+a.save()
+a=Article(title="Promoting Physical Skill Development in a Video-Based WEBlog Community Environment",year=2008,city="Wien",country="",month="June ",date=None,volume="-1",number="-1",page="1089-1096")
+a.save()
+a.language=english
+a.check=True
+a.journal=j5
+a.authors.add(a13)
+a.authors.add(a12)
+a.authors.add(a4)
+a.authors.add(a21)
+a.authors.add(a15)
+a.save()
+j6=Journal(publisher="Tsukasa Hirashima, Ulrich Hoppe, Shelley Shwu-Ching Young (Eds.)",name=" Supporting Learning Flow through Integrative Technologies")
+j6.save()
+a=Article(title="Practical Data Management among Learning-Support Systems",year=2007,city="Hiroshima",country="",month="November ",date=None,volume="1",number="-1",page="271-274")
+a.save()
+a.language=english
+a.check=True
+a.journal=j6
+a.authors.add(a13)
+a.authors.add(a12)
+a.authors.add(a4)
+a.authors.add(a15)
+a.save()
+j7=Journal(publisher="",name="ICCE2007 Supplementary Proc.")
+j7.save()
+a24=Author(e_givenname="T",e_surname="Takagi")
+a24.save()
+a=Article(title="Progress of the Federation for Campus SNS Using the Shibboleth",year=2007,city="Hiroshima",country="",month="November ",date=None,volume="2",number="-1",page="309-311")
+a.save()
+a.language=english
+a.check=True
+a.journal=j7
+a.authors.add(a12)
+a.authors.add(a13)
+a.authors.add(a21)
+a.authors.add(a4)
+a.authors.add(a23)
+a.authors.add(a24)
+a.authors.add(a15)
+a.save()
+a=Article(title="Using the Peer Review between Students in the Collaborative Report Writing System",year=2007,city="Hiroshima",country="",month="November ",date=None,volume="-1",number="-1",page="23-24")
+a.save()
+a.language=english
+a.check=True
+a.journal=j7
+a.authors.add(a12)
+a.authors.add(a13)
+a.authors.add(a14)
+a.authors.add(a4)
+a.authors.add(a23)
+a.authors.add(a15)
+a.save()
+j8=Journal(publisher="",name="Proc. of 8th International Conference on Information Technology Based Higher Education and Training (ITHET2007)")
+j8.save()
+a25=Author(e_givenname="H",e_surname="Ogata")
+a25.save()
+a=Article(title="Design of e-Learning System Using Ubiquitous Technology at The University of Tokushima",year=2007,city="Kumamoto",country="",month="July ",date=None,volume="-1",number="-1",page="578-583")
+a.save()
+a.language=english
+a.check=True
+a.journal=j8
+a.authors.add(a12)
+a.authors.add(a13)
+a.authors.add(a25)
+a.authors.add(a14)
+a.authors.add(a4)
+a.authors.add(a21)
+a.authors.add(a23)
+a.authors.add(a15)
+a.save()
+j9=Journal(publisher="",name="Proc. of IADIS International Conference on Web Based Communities 2007")
+j9.save()
+a26=Author(e_givenname="S",e_surname="Terao")
+a26.save()
+a27=Author(e_givenname="N",e_surname="Gotoda")
+a27.save()
+a=Article(title="Development of the Vlog-based Scenario with Cybercommunities of Interest for Experienced Learning",year=2007,city="Salamanca",country="Spain",month="February ",date=None,volume="-1",number="-1",page="272-275")
+a.save()
+a.language=english
+a.check=True
+a.journal=j9
+a.authors.add(a13)
+a.authors.add(a12)
+a.authors.add(a4)
+a.authors.add(a26)
+a.authors.add(a27)
+a.authors.add(a15)
+a.save()
+j10=Journal(publisher="",name="Proc. of International Workshop on Mobile and Ubiquitous Learning Environments (MULE) in conjunction with ICCE2006")
+j10.save()
+a28=Author(e_givenname="D",e_surname="C")
+a28.save()
+a29=Author(e_givenname="T",e_surname="Morikawa")
+a29.save()
+a30=Author(e_givenname="T",e_surname="Nose")
+a30.save()
+a=Article(title="Ubiquitous Learning Support as Bridge between Classroom Lecture and e-Learning",year=2006,city="Beijing",country="",month="November ",date=None,volume="1",number="-1",page="45-48")
+a.save()
+a.language=english
+a.check=True
+a.journal=j10
+a.authors.add(a14)
+a.authors.add(a25)
+a.authors.add(a12)
+a.authors.add(a13)
+a.authors.add(a4)
+a.authors.add(a28)
+a.authors.add(a29)
+a.authors.add(a30)
+a.authors.add(a15)
+a.save()
+j11=Journal(publisher="",name="Proc. of E-Learn2006")
+j11.save()
+a31=Author(e_givenname="T",e_surname="Oie")
+a31.save()
+a32=Author(e_givenname="M",e_surname="Sano")
+a32.save()
+a=Article(title="Construction and Operation of a Portal System at Tokushima University",year=2006,city="Honolulu",country="",month="October ",date=None,volume="-1",number="-1",page="642-647")
+a.save()
+a.language=english
+a.check=True
+a.journal=j11
+a.authors.add(a12)
+a.authors.add(a13)
+a.authors.add(a31)
+a.authors.add(a4)
+a.authors.add(a32)
+a.authors.add(a15)
+a.save()
+a33=Author(j_givenname="高明",j_surname="能瀬")
+a33.save()
+a34=Author(j_givenname="広明",j_surname="緒方")
+a34.save()
+a35=Author(j_givenname="富昭",j_surname="森川")
+a35.save()
+a=Article(title="徳島大学におけるe-Learningのシステム開発・運用・実践",year=2006,city="",country="",month="None",date=None,volume="29",number="3",page="425-434")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j2
+a.authors.add(a8)
+a.authors.add(a33)
+a.authors.add(a9)
+a.authors.add(a34)
+a.authors.add(a19)
+a.authors.add(a10)
+a.authors.add(a7)
+a.authors.add(a35)
+a.save()
+a=Article(title="授業アーカイブ型e-Learningシステムにおける簡易試験を用いた受講前・中・後の学習支援環境の試作",year=2006,city="",country="",month="None",date=None,volume="29",number="3",page="251-259")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j2
+a.authors.add(a10)
+a.authors.add(a7)
+a.authors.add(a9)
+a.authors.add(a19)
+a.save()
+j12=Journal(publisher="",name="Proc. of E-Learn2005")
+j12.save()
+a36=Author(e_givenname="K",e_surname="Niki")
+a36.save()
+a=Article(title="Ubiquitous Learning Management with e-Portfolio on PC/PDA",year=2005,city="Vancouver",country="",month="October ",date=None,volume="1",number="-1",page="3029-3034")
+a.save()
+a.language=english
+a.check=True
+a.journal=j12
+a.authors.add(a13)
+a.authors.add(a12)
+a.authors.add(a36)
+a.authors.add(a4)
+a.authors.add(a14)
+a.authors.add(a25)
+a.authors.add(a15)
+a.authors.add(a29)
+a.save()
+j13=Journal(publisher="",name="Proc. of World Conference on Educational Multimedia, Hypermedia & Telecommunications (ED-MEDIA2005)")
+j13.save()
+a=Article(title="Reflection and Influence of Learning Activities in Preparation/Review Process on e-Learning",year=2005,city="Montreal",country="",month="June ",date=None,volume="-1",number="-1",page="3727-3733")
+a.save()
+a.language=english
+a.check=True
+a.journal=j13
+a.authors.add(a13)
+a.authors.add(a12)
+a.authors.add(a4)
+a.authors.add(a15)
+a.save()
+j14=Journal(publisher="",name="Electronic Proc. of International Workshop Series on RFID")
+j14.save()
+a37=Author(e_givenname="R",e_surname="Akamatsu")
+a37.save()
+a=Article(title="TANGO: Supporting Vocabulary Learning with RFID tags",year=-1,city="Tokyo",country="",month="None",date=None,volume="-1",number="-1",page="")
+a.save()
+a.language=english
+a.check=True
+a.journal=j14
+a.authors.add(a25)
+a.authors.add(a37)
+a.authors.add(a14)
+a.authors.add(a15)
+a.authors.add(a13)
+a.authors.add(a12)
+a.authors.add(a4)
+a.authors.add(a29)
+a.save()
+j15=Journal(publisher="",name="Proc. of E-Learn2004")
+j15.save()
+a38=Author(e_givenname="M",e_surname="Katayama")
+a38.save()
+a=Article(title="Adaptive Synchronization of Learning Media among Semi-synchronous Learners",year=2004,city="Washington, D.C.",country="",month="November ",date=None,volume="1",number="-1",page="2829-2834")
+a.save()
+a.language=english
+a.check=True
+a.journal=j15
+a.authors.add(a13)
+a.authors.add(a12)
+a.authors.add(a29)
+a.authors.add(a38)
+a.authors.add(a4)
+a.authors.add(a15)
+a.save()
+j16=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 (vol.112, no.500) ET2012-98")
+j16.save()
+a=Article(title="e-Learningの学習継続とソーシャルメディアの関係の考察",year=2013,city="Ehime",country="",month="March ",date=29 ,volume="-1",number="-1",page="95-99")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j16
+a.authors.add(a7)
+a.authors.add(a8)
+a.authors.add(a9)
+a.authors.add(a10)
+a.save()
+j17=Journal(publisher="",name="教育システム情報学会 第34回全国大会 講演論文集")
+j17.save()
+a=Article(title="学習コミュティへのSNSによる支援環境の構築について",year=2009,city="Nagoya",country="",month="August ",date=19-21 ,volume="-1",number="-1",page="2-3")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j17
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a16)
+a.authors.add(a17)
+a.authors.add(a9)
+a.authors.add(a8)
+a.authors.add(a19)
+a.save()
+j18=Journal(publisher="",name="平成20年度 情報教育研究集会 講演論文集")
+j18.save()
+a39=Author(j_givenname="真宏",j_surname="中川")
+a39.save()
+a=Article(title="認証基盤を用いたWebシステム間の連携の検討",year=2008,city="Fukuoka",country="",month="December ",date=12-13 ,volume="-1",number="-1",page="503-506")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j18
+a.authors.add(a39)
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a9)
+a.authors.add(a16)
+a.authors.add(a20)
+a.authors.add(a19)
+a.save()
+j19=Journal(publisher="",name="電気関係学会 四国支部連合大会 講演論文集")
+j19.save()
+a40=Author(j_givenname="孝介",j_surname="影本")
+a40.save()
+a=Article(title="効果的学習を行うためのマーキング機能の実装",year=2008,city="Ehime",country="",month="September ",date=27 ,volume="-1",number="-1",page="308")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j19
+a.authors.add(a40)
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a8)
+a.authors.add(a9)
+a.authors.add(a19)
+a.save()
+j20=Journal(publisher="",name="教育システム情報学会 第33回全国大会 講演論文集")
+j20.save()
+a41=Author(j_givenname="一平",j_surname="中田")
+a41.save()
+a=Article(title="論文レビュー支援SNSのネットワーク構造を利用した推薦手法の考察",year=2008,city="Kumamoto",country="",month="September ",date=3-5 ,volume="-1",number="-1",page="126-127")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j20
+a.authors.add(a41)
+a.authors.add(a10)
+a.authors.add(a7)
+a.authors.add(a9)
+a.authors.add(a19)
+a.save()
+j21=Journal(publisher="",name="平成19年度 情報教育研究集会 講演論文集")
+j21.save()
+a=Article(title="Shibbolethを用いたWebSSOと連携について",year=2007,city="",country="",month="November ",date=None,volume="-1",number="-1",page="326-329")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j21
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a9)
+a.authors.add(a20)
+a.authors.add(a16)
+a.authors.add(a19)
+a.save()
+j22=Journal(publisher="",name="日本教育工学会 第23回全国大会 講演論文集")
+j22.save()
+a=Article(title="Shibbolethを用いたキャンパスSNS連携の実現",year=2007,city="",country="",month="September ",date=None,volume="-1",number="-1",page="537-538")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j22
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a9)
+a.authors.add(a16)
+a.authors.add(a20)
+a.authors.add(a19)
+a.save()
+j23=Journal(publisher="",name="教育システム情報学会 第32回全国大会 講演論文集 CD-ROM版")
+j23.save()
+a=Article(title="Webシステム間でのShibbolethを用いた認証連携の実現",year=2007,city="",country="",month="September ",date=None,volume="-1",number="-1",page="")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j23
+a.authors.add(a39)
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a8)
+a.authors.add(a9)
+a.authors.add(a19)
+a.save()
+a=Article(title="効果的学習を行うためのマーキング機能",year=2007,city="",country="",month="September ",date=None,volume="-1",number="-1",page="")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j23
+a.authors.add(a40)
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a8)
+a.authors.add(a9)
+a.authors.add(a19)
+a.save()
+j24=Journal(publisher="",name="日本教育工学会 第22回全国大会 講演論文集")
+j24.save()
+a=Article(title="徳島大学におけるu-Learningの実践とその評価",year=2006,city="",country="",month="November ",date=None,volume="-1",number="-1",page="111-114")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j24
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a34)
+a.authors.add(a8)
+a.authors.add(a9)
+a.authors.add(a35)
+a.authors.add(a19)
+a.save()
+j25=Journal(publisher="",name="北海道大学現代GPフォーラム予稿集")
+j25.save()
+a=Article(title="徳島大学におけるu-Learningの実践",year=2006,city="",country="",month="June ",date=None,volume="-1",number="-1",page="37-40")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j25
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a8)
+a.authors.add(a34)
+a.authors.add(a9)
+a.authors.add(a35)
+a.authors.add(a19)
+a.save()
+j26=Journal(publisher="",name="大学教育研究ジャーナル (別冊)")
+j26.save()
+a42=Author(j_givenname="憲市",j_surname="藤本")
+a42.save()
+a43=Author(j_givenname="哲哉",j_surname="吉永")
+a43.save()
+a44=Author(j_givenname="隆弘",j_surname="大家")
+a44.save()
+a=Article(title="EDB/CMSと汎用LMSを用いたe-ラーニングシステムの構築",year=2006,city="",country="",month="None",date=None,volume="-1",number="3",page="43-44")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j26
+a.authors.add(a42)
+a.authors.add(a43)
+a.authors.add(a44)
+a.authors.add(a9)
+a.save()
+j27=Journal(publisher="",name="人工知能学会 研究会資料")
+j27.save()
+a45=Author(j_givenname="勇",j_surname="高橋")
+a45.save()
+a46=Author(j_givenname="洋司",j_surname="越智")
+a46.save()
+a47=Author(j_givenname="忍",j_surname="長谷川")
+a47.save()
+a48=Author(j_givenname="智子",j_surname="小尻")
+a48.save()
+a=Article(title="若手研究者による教育システム研究の再定義  — 2005年度教育システム若手の会での議論より —",year=2006,city="",country="",month="March ",date=None,volume="A503",number="16",page="89-94")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j27
+a.authors.add(a45)
+a.authors.add(a46)
+a.authors.add(a9)
+a.authors.add(a47)
+a.authors.add(a8)
+a.authors.add(a48)
+a.save()
+j28=Journal(publisher="",name="平成17年度 情報処理研究集会 講演論文集")
+j28.save()
+a=Article(title="「ユビキタス技術による新しい学習環境の創生」の現状と今後",year=2005,city="",country="",month="November ",date=None,volume="-1",number="-1",page="25-28")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j28
+a.authors.add(a10)
+a.authors.add(a7)
+a.authors.add(a8)
+a.authors.add(a34)
+a.authors.add(a9)
+a.authors.add(a19)
+a.authors.add(a35)
+a.save()
+a49=Author(j_givenname="雅彦",j_surname="佐野")
+a49.save()
+a50=Author(j_givenname="俊一郎",j_surname="大恵")
+a50.save()
+a=Article(title="大学ポータルの徳島大学における構築とその運用について",year=2005,city="",country="",month="November ",date=None,volume="-1",number="-1",page="113-116")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j28
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a44)
+a.authors.add(a9)
+a.authors.add(a49)
+a.authors.add(a50)
+a.authors.add(a19)
+a.save()
+j29=Journal(publisher="",name="情報処理学会 研究報告 (2005-DSM-39)")
+j29.save()
+a=Article(title="徳島大学における大学ポータルの構築とその運用について",year=2005,city="",country="",month="October ",date=None,volume="",number="101",page="1-6")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j29
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a44)
+a.authors.add(a9)
+a.authors.add(a49)
+a.authors.add(a50)
+a.authors.add(a19)
+a.save()
+a51=Author(j_givenname="直之",j_surname="山根")
+a51.save()
+a=Article(title="ITを活用した学会·大会支援システムの構築",year=2005,city="",country="",month="October ",date=None,volume="",number="101",page="67-72")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j29
+a.authors.add(a51)
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a9)
+a.authors.add(a8)
+a.authors.add(a34)
+a.authors.add(a19)
+a.save()
+j30=Journal(publisher="",name="日本教育工学会 第21回全国大会 講演論文集")
+j30.save()
+a=Article(title="ユビキタス·モバイル学習環境: 語学学習への研究と大学での実践",year=2005,city="",country="",month="September ",date=None,volume="-1",number="-1",page="17-18")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j30
+a.authors.add(a34)
+a.authors.add(a19)
+a.authors.add(a8)
+a.authors.add(a9)
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a35)
+a.authors.add(a33)
+a.save()
+a52=Author(j_givenname="正樹",j_surname="森")
+a52.save()
+a=Article(title="Wikiを利用した共同レポート作成システムに関する研究",year=2005,city="",country="",month="September ",date=None,volume="-1",number="-1",page="289-290")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j30
+a.authors.add(a52)
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a9)
+a.authors.add(a8)
+a.authors.add(a34)
+a.authors.add(a19)
+a.save()
+a53=Author(j_givenname="靖素",j_surname="平川")
+a53.save()
+a=Article(title="ユビキタス機器を利用した実世界インタラクション型ゲーム: 2進数の学習を対象として",year=2005,city="",country="",month="September ",date=None,volume="-1",number="-1",page="491-492")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j30
+a.authors.add(a8)
+a.authors.add(a53)
+a.authors.add(a34)
+a.authors.add(a10)
+a.authors.add(a7)
+a.authors.add(a9)
+a.authors.add(a35)
+a.authors.add(a19)
+a.save()
+a54=Author(j_givenname="貴幸",j_surname="森")
+a54.save()
+a=Article(title="ユビキタス機器を利用した授業支援",year=2005,city="",country="",month="September ",date=None,volume="-1",number="-1",page="493-494")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j30
+a.authors.add(a54)
+a.authors.add(a8)
+a.authors.add(a34)
+a.authors.add(a10)
+a.authors.add(a7)
+a.authors.add(a9)
+a.authors.add(a35)
+a.authors.add(a19)
+a.save()
+j31=Journal(publisher="",name="教育システム情報学会 第30周年記念全国大会 講演論文集")
+j31.save()
+a55=Author(j_givenname="栄治",j_surname="酒巻")
+a55.save()
+a=Article(title="RSSを活用した適応的情報提供·収集システムの試作",year=2005,city="",country="",month="August ",date=None,volume="-1",number="-1",page="327-328")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j31
+a.authors.add(a55)
+a.authors.add(a10)
+a.authors.add(a7)
+a.authors.add(a9)
+a.authors.add(a34)
+a.authors.add(a35)
+a.authors.add(a8)
+a.authors.add(a19)
+a.save()
+a56=Author(j_givenname="覚史",j_surname="寺尾")
+a56.save()
+a=Article(title="簡易的な入力方法を用いた音楽鑑賞支援に関する研究",year=2005,city="",country="",month="August ",date=None,volume="-1",number="-1",page="451-452")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j31
+a.authors.add(a56)
+a.authors.add(a10)
+a.authors.add(a9)
+a.authors.add(a19)
+a.save()
+j32=Journal(publisher="",name="日本教育工学会 第20回全国大会 講演論文集")
+j32.save()
+a=Article(title="徳島大学におけるe-Learningの運用管理について",year=2004,city="",country="",month="September ",date=None,volume="-1",number="-1",page="145-148")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j32
+a.authors.add(a7)
+a.authors.add(a10)
+a.authors.add(a34)
+a.authors.add(a8)
+a.authors.add(a9)
+a.authors.add(a35)
+a.authors.add(a19)
+a.save()
+a57=Author(j_givenname="伸行",j_surname="小東")
+a57.save()
+a58=Author(j_givenname="益造",j_surname="柳田")
+a58.save()
+a=Article(title="感性共有に基づく協調的音楽鑑賞支援に関する研究",year=2004,city="",country="",month="September ",date=None,volume="-1",number="-1",page="901-902")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j32
+a.authors.add(a57)
+a.authors.add(a10)
+a.authors.add(a9)
+a.authors.add(a19)
+a.authors.add(a58)
+a.save()
+j33=Journal(publisher="Wong, L.-H. et al. (Eds.)",name=": Proc. of the 21st International Conference on Computers in Education (ICCE2013)")
+j33.save()
+j34=Journal(publisher="",name="Indonesia: Asia-Pacific Society for Computers in Education")
+j34.save()
+a=Article(title="Encouraging Each Other in the Community Site for Habit Development",year=2013,city="",country="Indonesia",month="November ",date=20 ,volume="-1",number="-1",page="292-294")
+a.save()
+a.language=english
+a.check=True
+a.journal=j34
+a.authors.add(a4)
+a.authors.add(a2)
+a.save()
+a59=Author(e_givenname="Y",e_surname="WATANABE")
+a59.save()
+a=Article(title="Review Support System with Visual-Oriented Annotation Method for Presentation Rehearsal",year=2013,city="",country="Indonesia",month="November ",date=20 ,volume="-1",number="-1",page="301-303")
+a.save()
+a.language=english
+a.check=True
+a.journal=j34
+a.authors.add(a2)
+a.authors.add(a59)
+a.authors.add(a3)
+a.save()
+j35=Journal(publisher="",name="International Journal of Knowledge and Web Intelligence 2012")
+j35.save()
+a=Article(title="Back-review support system for presentation rehearsal review",year=2012,city="",country="",month="July ",date=26 ,volume="3",number="1",page="45-57")
+a.save()
+a.language=english
+a.check=True
+a.journal=j35
+a.authors.add(a2)
+a.authors.add(a3)
+a.save()
+j36=Journal(publisher="G. Biswas et al. (Eds.)",name=": Proc. of the 20th International Conference on Computers in Education (ICCE2012)")
+j36.save()
+j37=Journal(publisher="",name="Asia-Pacific Society for Computers in Education")
+j37.save()
+a60=Author(e_givenname="Y",e_surname="Naruta")
+a60.save()
+a=Article(title="Design of Learning Hyperspace Construction System for Knowledge Refinement in Self-Directed Learning",year=2012,city="",country="Singapore",month="November ",date=28 ,volume="-1",number="-1",page="121-123")
+a.save()
+a.language=english
+a.check=True
+a.journal=j37
+a.authors.add(a60)
+a.authors.add(a2)
+a.save()
+j38=Journal(publisher="T. Hirashima et al. (Eds.)",name=": Proc. of the 19th International Conference on Computers in Education (ICCE2011)")
+j38.save()
+a=Article(title="Knowledge Publishing Method for Knowledge Refinement in Self-Directed Learning",year=2011,city="Chiang Mai",country="Thailand",month="November ",date=30 ,volume="-1",number="-1",page="131-134")
+a.save()
+a.language=english
+a.check=True
+a.journal=j37
+a.authors.add(a2)
+a.authors.add(a60)
+a.save()
+a61=Author(e_givenname="R",e_surname="Tadokoro")
+a61.save()
+a62=Author(e_givenname="M",e_surname="Yoshizawa")
+a62.save()
+a=Article(title="Learning Objectives in Web-Based Continuous Inquiry Learning Using Social Bookmark",year=2011,city="Chiang Mai",country="Thailand",month="November ",date=30 ,volume="-1",number="-1",page="327-329")
+a.save()
+a.language=english
+a.check=True
+a.journal=j37
+a.authors.add(a4)
+a.authors.add(a61)
+a.authors.add(a62)
+a.authors.add(a2)
+a.authors.add(a12)
+a.save()
+j39=Journal(publisher="A. König et al. (Eds.)",name=": KES2011, Part II, LNAI 6882")
+j39.save()
+j40=Journal(publisher="",name="Springer")
+j40.save()
+a=Article(title="Back-Review Support Method for Presentation Rehearsal Support System",year=2011,city="Heidelberg",country="",month="September ",date=12 ,volume="-1",number="-1",page="165-175")
+a.save()
+a.language=english
+a.check=True
+a.journal=j40
+a.authors.add(a2)
+a.authors.add(a3)
+a.save()
+j41=Journal(publisher="",name="J.A. Jacko (Ed.): Human-Computer Interaction, Part IV, HCII 2011, LNCS 6764")
+j41.save()
+a63=Author(e_givenname="T",e_surname="Oobayashi")
+a63.save()
+a=Article(title="A Reading History Logger for Supporting Reading Habit Development",year=2011,city="Heidelberg",country="",month="July ",date=12 ,volume="-1",number="-1",page="93-96")
+a.save()
+a.language=english
+a.check=True
+a.journal=j40
+a.authors.add(a4)
+a.authors.add(a63)
+a.save()
+j42=Journal(publisher="",name="Proc. of IADIS International Conference Cognition and Exploratory Learning in Digital Age (CELDA2009)")
+j42.save()
+a=Article(title="A Design of Social Networking Service for Supporting Learning Habits Development",year=2009,city="Rome",country="Italy",month="November ",date=None,volume="-1",number="-1",page="396-399")
+a.save()
+a.language=english
+a.check=True
+a.journal=j42
+a.authors.add(a4)
+a.authors.add(a2)
+a.authors.add(a12)
+a.authors.add(a15)
+a.save()
+j43=Journal(publisher="",name="Proc. of Eighth IEEE International Conference on Advanced Learning Technologies (ICALT2008)")
+j43.save()
+a=Article(title="Facilitating Presentation Rehearsal Review with Realtime-created Hypervideo Technique",year=2008,city="Santandar",country="Spain",month="July ",date=None,volume="-1",number="-1",page="438-439")
+a.save()
+a.language=english
+a.check=True
+a.journal=j43
+a.authors.add(a2)
+a.authors.add(a3)
+a.save()
+j44=Journal(publisher="",name="Proc. of International Conference on Computers in Education (ICCE2007)")
+j44.save()
+a=Article(title="Presentation Review Supporting Environment with Realtime-created Hypervideo Technique",year=2007,city="Hiroshima",country="Japan",month="November ",date=None,volume="-1",number="-1",page="")
+a.save()
+a.language=english
+a.check=True
+a.journal=j44
+a.authors.add(a2)
+a.authors.add(a3)
+a.save()
+a64=Author(e_givenname="K",e_surname="Nakagawa")
+a64.save()
+a=Article(title="A Design and Prototyping of a Social Chronology System for History Learning",year=2007,city="Hiroshima",country="",month="November ",date=None,volume="2",number="-1",page="303-308")
+a.save()
+a.language=english
+a.check=True
+a.journal=j7
+a.authors.add(a4)
+a.authors.add(a64)
+a.authors.add(a12)
+a.authors.add(a21)
+a.authors.add(a15)
+a.save()
+j45=Journal(publisher="",name="Proc. of World Conference on Educational Multimedia, Hypermedia, & Telecommunications (ED-MEDIA2007)")
+j45.save()
+a=Article(title="Designing Presentation Review Environment with Realtime-created Hypervideo of Presentation Rehearsal",year=2007,city="Vancourver",country="Canada",month="None",date=None,volume="-1",number="-1",page="1213-1220")
+a.save()
+a.language=english
+a.check=True
+a.journal=j45
+a.authors.add(a2)
+a.authors.add(a3)
+a.save()
+j46=Journal(publisher="",name="Proc. of the 17th annual conference of the Society for Information Technology and Teacher Education(SITE 2007)")
+j46.save()
+a65=Author(e_givenname="T",e_surname="Mendori")
+a65.save()
+a=Article(title="Learning of Scientific Thinking Using Reflection Support Tool",year=2007,city="San Antonio",country="",month="March ",date=None,volume="-1",number="-1",page="2014-2020")
+a.save()
+a.language=english
+a.check=True
+a.journal=j46
+a.authors.add(a12)
+a.authors.add(a2)
+a.authors.add(a4)
+a.authors.add(a65)
+a.authors.add(a13)
+a.authors.add(a23)
+a.authors.add(a15)
+a.save()
+a66=Author(e_givenname="R",e_surname="Ide")
+a66.save()
+a=Article(title="A Proposal to Extend Folksonomy based on Tags and Links",year=2007,city="Salamanca",country="Spain",month="February ",date=None,volume="-1",number="-1",page="385-383")
+a.save()
+a.language=english
+a.check=True
+a.journal=j9
+a.authors.add(a4)
+a.authors.add(a12)
+a.authors.add(a13)
+a.authors.add(a66)
+a.authors.add(a15)
+a.save()
+a67=Author(e_givenname="H",e_surname="Kawakami")
+a67.save()
+a68=Author(e_givenname="T",e_surname="Ueta")
+a68.save()
+a=Article(title="e-Syllabus System Supporting the Discovery of Learning Paths",year=2006,city="Honolulu",country="",month="October ",date=None,volume="-1",number="-1",page="784-789")
+a.save()
+a.language=english
+a.check=True
+a.journal=j11
+a.authors.add(a4)
+a.authors.add(a31)
+a.authors.add(a67)
+a.authors.add(a68)
+a.authors.add(a15)
+a.save()
+j47=Journal(publisher="",name="Proc. of World Conference on Educational Multimedia, Hypermedia & Telecommunications (ED-MEDIA2006)")
+j47.save()
+a=Article(title="Peer Review Framework with “Review Diagram” for Self-Directed Learning",year=2006,city="Orlando, Florida",country="USA",month="None",date=None,volume="-1",number="-1",page=" 806-811")
+a.save()
+a.language=english
+a.check=True
+a.journal=j47
+a.authors.add(a2)
+a.authors.add(a4)
+a.authors.add(a3)
+a.save()
+j48=Journal(publisher="",name="大学教育研究ジャーナル")
+j48.save()
+a69=Author(j_givenname="哲史",j_surname="上田")
+a69.save()
+a70=Author(j_givenname="雅徳",j_surname="廣友")
+a70.save()
+a71=Author(j_givenname="博",j_surname="川上")
+a71.save()
+a=Article(title="EDBを利用した学習経路探索を支援するeシラバスシステムの構築",year=2006,city="",country="",month="None",date=None,volume="-1",number="3",page="1-9")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j48
+a.authors.add(a9)
+a.authors.add(a44)
+a.authors.add(a69)
+a.authors.add(a70)
+a.authors.add(a19)
+a.authors.add(a71)
+a.save()
+a72=Author(e_givenname="Y",e_surname="Ochi")
+a72.save()
+a=Article(title="“Awareness for Review Chance” Framework for Knowledge Stability of Usage of Words and Phrases",year=2005,city="Montreal",country="",month="June ",date=None,volume="-1",number="-1",page="3998-4003")
+a.save()
+a.language=english
+a.check=True
+a.journal=j13
+a.authors.add(a4)
+a.authors.add(a12)
+a.authors.add(a72)
+a.authors.add(a2)
+a.authors.add(a15)
+a.save()
+j49=Journal(publisher="",name="Proc. of World Conference on Educational Multimedia, Hypermedia & Telecommunications (ED-MEDIA2004)")
+j49.save()
+a=Article(title="An Illustrative-Sentences Search Tool Using Phrase Structure “SOUP”",year=2004,city="Lugano",country="",month="June ",date=None,volume="-1",number="-1",page="1193-1199")
+a.save()
+a.language=english
+a.check=True
+a.journal=j49
+a.authors.add(a4)
+a.authors.add(a72)
+a.authors.add(a12)
+a.authors.add(a2)
+a.authors.add(a15)
+a.save()
+j50=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 (vol.114, no.305) ET2014-65")
+j50.save()
+a73=Author(j_givenname="晃大",j_surname="谷川")
+a73.save()
+a74=Author(j_givenname="竜",j_surname="岡本")
+a74.save()
+a75=Author(j_givenname="昭博",j_surname="柏原")
+a75.save()
+a=Article(title="プレゼンテーション・リハーサルを対象としたプレゼンテーション再構成手法にもとづくピアレビュー支援の検討",year=2014,city="Osaka",country="",month="November ",date=14 ,volume="-1",number="-1",page="25-30")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j50
+a.authors.add(a73)
+a.authors.add(a74)
+a.authors.add(a75)
+a.save()
+j51=Journal(publisher="",name="教育システム情報学会 第39回全国大会 講演論文集")
+j51.save()
+a=Article(title="プレゼンテーション・リハーサルを対象としたピアレビュー支援のためのプレゼンテーション再構成手法",year=2014,city="Wakayama",country="",month="September ",date=11 ,volume="-1",number="-1",page="265-266")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j51
+a.authors.add(a73)
+a.authors.add(a74)
+a.authors.add(a75)
+a.save()
+a=Article(title="穴埋め式講義スライドを配信する簡易LMSの試作と授業での実践",year=2014,city="Wakayama",country="",month="September ",date=10 ,volume="-1",number="-1",page="47-48")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j51
+a.authors.add(a9)
+a.save()
+j52=Journal(publisher="",name="人工知能学会全国大会 (第28回) 論文集, 3D4-1")
+j52.save()
+a76=Author(j_givenname="大樹",j_surname="冨田")
+a76.save()
+a=Article(title="Web学習の習慣化支援を目的とした学習計画の実行を促すブラウザ拡張機能の試作",year=2014,city="Ehime",country="",month="May ",date=14 ,volume="-1",number="-1",page="")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j52
+a.authors.add(a76)
+a.authors.add(a9)
+a.save()
+j53=Journal(publisher="",name="Technical Reports on Information and Computer Science from Kochi, Vol.6, No.6")
+j53.save()
+a77=Author(j_givenname="龍太郎",j_surname="副島")
+a77.save()
+a=Article(title="紙媒体資料との連携を考慮した授業動画・音声による復習を支援する授業レコーダの試作",year=2014,city="",country="",month="None",date=None,volume="-1",number="-1",page="")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j53
+a.authors.add(a77)
+a.authors.add(a9)
+a.save()
+j54=Journal(publisher="",name="Technical Reports on Information and Computer Science from Kochi, Vol.6, No.7")
+j54.save()
+a78=Author(j_givenname="悟大",j_surname="堀")
+a78.save()
+a=Article(title="目標と継続方法を共有する習慣化支援サイトの開発",year=2014,city="",country="",month="None",date=None,volume="-1",number="-1",page="")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j54
+a.authors.add(a78)
+a.authors.add(a9)
+a.save()
+j55=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 (vol.113, no.482) ET2013-93")
+j55.save()
+a79=Author(j_givenname="悠人",j_surname="渡邊")
+a79.save()
+a=Article(title="プレゼンテーション・リハーサルにおける視覚的なアノテーション手法を指向したレビュー支援環境の構築と評価",year=2014,city="Kochi",country="",month="March ",date=8 ,volume="-1",number="-1",page="7-12")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j55
+a.authors.add(a79)
+a.authors.add(a74)
+a.authors.add(a75)
+a.save()
+j56=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 (vol.113, no.482) ET2013-94")
+j56.save()
+a80=Author(j_givenname="翔伍",j_surname="眞邊")
+a80.save()
+a=Article(title="プレゼンテーション評価のための発表スライドと口頭説明の分割・統合・タグ付けによる再構成手法",year=2014,city="Kochi",country="",month="March ",date=8 ,volume="-1",number="-1",page="13-18")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j56
+a.authors.add(a73)
+a.authors.add(a80)
+a.authors.add(a74)
+a.save()
+j57=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 (vol.113, no.482) ET2013-119")
+j57.save()
+a81=Author(j_givenname="一伸",j_surname="濱田")
+a81.save()
+a82=Author(j_givenname="一弘",j_surname="鈴木")
+a82.save()
+a83=Author(j_givenname="研一",j_surname="塩田")
+a83.save()
+a=Article(title="学習コンテンツ推薦を目的とした難易度推定アルゴリズムの評価のための正解データ作成",year=2014,city="Kochi",country="",month="March ",date=8 ,volume="-1",number="-1",page="161-164")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j57
+a.authors.add(a9)
+a.authors.add(a81)
+a.authors.add(a82)
+a.authors.add(a83)
+a.authors.add(a74)
+a.save()
+j58=Journal(publisher="",name="教育システム情報学会 第38回全国大会 講演論文集")
+j58.save()
+a=Article(title="プレゼンテーション・リハーサルを対象としたプレゼンテーションの差分に着目したバックレビュー支援",year=2013,city="Kanazawa",country="",month="Sep ",date=3 ,volume="-1",number="-1",page="329-330")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j58
+a.authors.add(a73)
+a.authors.add(a74)
+a.authors.add(a75)
+a.save()
+a=Article(title="難易度推定アルゴリズムを用いた学習コンテンツ推薦システムの開発に向けた事前調査",year=2013,city="Kanazawa",country="",month="Sep ",date=2 ,volume="-1",number="-1",page="15-16")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j58
+a.authors.add(a81)
+a.authors.add(a9)
+a.authors.add(a82)
+a.authors.add(a83)
+a.authors.add(a74)
+a.save()
+j59=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 (vol.113, no.166) ET2013-22")
+j59.save()
+a=Article(title="プレゼンテーション・リハーサルにおける視覚的なアノテーション手法を指向したレビュー支援環境",year=2013,city="Kumamoto",country="",month="July ",date=27 ,volume="-1",number="-1",page="19-24")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j59
+a.authors.add(a79)
+a.authors.add(a74)
+a.authors.add(a75)
+a.save()
+j60=Journal(publisher="",name="2012年度 JSiSE 学生研究発表会")
+j60.save()
+a=Article(title="プレゼンテーションの差分とレビュー結果との関連性に着目した改善評価方法",year=2013,city="Kagawa",country="",month="Mar ",date=19 ,volume="-1",number="-1",page="")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j60
+a.authors.add(a73)
+a.authors.add(a74)
+a.save()
+j61=Journal(publisher="",name="人工知能学会研究会資料 SIG-ALST-B203 (第67回 先進的学習科学と工学研究会)")
+j61.save()
+a84=Author(j_givenname="大登",j_surname="水永")
+a84.save()
+a85=Author(j_givenname="裕也",j_surname="藤岡")
+a85.save()
+a=Article(title="強い紐帯を対象とした習慣化支援SNSの開発",year=2013,city="Kochi",country="",month="Mar ",date=4 ,volume="-1",number="-1",page="1-6")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j61
+a.authors.add(a9)
+a.authors.add(a84)
+a.authors.add(a85)
+a.authors.add(a74)
+a.save()
+a86=Author(j_givenname="幸紀",j_surname="成田")
+a86.save()
+a=Article(title="主体的学習における知識洗練化を指向した Learning Hyperspace 構築システムの開発",year=2013,city="Kochi",country="",month="Mar ",date=4 ,volume="-1",number="-1",page="31-36")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j61
+a.authors.add(a86)
+a.authors.add(a74)
+a.save()
+j62=Journal(publisher="",name="ARG Webインテリジェンスとインタラクション研究会 第1回研究会予稿集")
+j62.save()
+a=Article(title="学習コンテンツ推薦に向けた2部ネットワーク分析に基づく習熟度と難易度の推定手法の提案",year=2012,city="Yokohama",country="",month="Dec ",date=14 ,volume="-1",number="-1",page="13-14")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j62
+a.authors.add(a9)
+a.authors.add(a81)
+a.authors.add(a82)
+a.authors.add(a83)
+a.authors.add(a74)
+a.authors.add(a7)
+a.save()
+j63=Journal(publisher="",name="教育システム情報学会 第37回全国大会 講演論文集")
+j63.save()
+a=Article(title="2部ネットワーク分析によるユーザ習熟度とアイテム難易度の推定アルゴリズムの提案",year=2012,city="Narashino",country="",month="Aug ",date=24 ,volume="-1",number="-1",page="384-385")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j63
+a.authors.add(a81)
+a.authors.add(a9)
+a.authors.add(a82)
+a.authors.add(a83)
+a.save()
+a=Article(title="視覚的なアノテーション手法を用いたプレゼンテーション・リハーサル支援方法の提案",year=2012,city="Narashino",country="",month="Aug ",date=22 ,volume="-1",number="-1",page="322-323")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j63
+a.authors.add(a79)
+a.authors.add(a74)
+a.save()
+j64=Journal(publisher="",name="日本教育工学会 研究報告集 JSET12-2")
+j64.save()
+a=Article(title="アイテム難易度とユーザ習熟度を推測するアルゴリズムを評価するための正解データ作成手法",year=2012,city="Akita",country="",month="May ",date=19 ,volume="-1",number="-1",page="113-118")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j64
+a.authors.add(a81)
+a.authors.add(a9)
+a.authors.add(a7)
+a.save()
+j65=Journal(publisher="",name="Technical Reports on Information and Computer Science from Kochi, Vol.4, No.1")
+j65.save()
+a87=Author(j_givenname="浩平",j_surname="大野")
+a87.save()
+a=Article(title="事象に含まれる時間に関する意図の保持を目的とした時間情報表現形式の設計",year=2012,city="",country="",month="None",date=None,volume="-1",number="-1",page="")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j65
+a.authors.add(a87)
+a.authors.add(a9)
+a.save()
+j66=Journal(publisher="",name="Technical Reports on Information and Computer Science from Kochi, Vol.4, No.2")
+j66.save()
+a88=Author(j_givenname="竜也",j_surname="真木")
+a88.save()
+a=Article(title="学習習慣化を目的としたブラウザ拡張機能による自己モニタリング環境",year=2012,city="",country="",month="None",date=None,volume="-1",number="-1",page="")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j66
+a.authors.add(a88)
+a.authors.add(a9)
+a.save()
+j67=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 (vol.111, no.473) ET2011-108")
+j67.save()
+a89=Author(j_givenname="勝也",j_surname="徳永")
+a89.save()
+a=Article(title="プレゼンテーション・リハーサルにおけるレビュアの指摘を収集・整理・検討するための議論支援システム",year=2012,city="Kagawa",country="",month="March ",date=10 ,volume="-1",number="-1",page="47-50")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j67
+a.authors.add(a89)
+a.authors.add(a74)
+a.authors.add(a75)
+a.save()
+j68=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 (vol.111, no.473) ET2011-110")
+j68.save()
+a90=Author(j_givenname="裕美子",j_surname="白山")
+a90.save()
+a=Article(title="複数のプレゼンテーション・リハーサル結果を比較検討するためのデータ閲覧方法",year=2012,city="Kagawa",country="",month="March ",date=10 ,volume="-1",number="-1",page="57-60")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j68
+a.authors.add(a90)
+a.authors.add(a74)
+a.save()
+j69=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 (vol.111, no.473) ET2011-138")
+j69.save()
+a=Article(title="主体的学習における知識の外化・検証を通じた知識洗練化支援",year=2012,city="Kagawa",country="",month="March ",date=10 ,volume="-1",number="-1",page="221-224")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j69
+a.authors.add(a86)
+a.authors.add(a74)
+a.save()
+j70=Journal(publisher="",name="2012年春 JSiSE 学生研究発表会")
+j70.save()
+a=Article(title="プレゼンテーション・リハーサルにおける視覚的なスライド・アノテーションに基づくレビュー支援方法",year=2012,city="Kagawa",country="",month="March ",date=8 ,volume="-1",number="-1",page="174-175")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j70
+a.authors.add(a79)
+a.authors.add(a74)
+a.save()
+j71=Journal(publisher="",name="教育システム情報学会研究報告 Vol.26, No.5 (2012-1)")
+j71.save()
+a91=Author(j_givenname="将宏",j_surname="芳沢")
+a91.save()
+a92=Author(j_givenname="亮",j_surname="田所")
+a92.save()
+a=Article(title="学習目標と関連付いたブックマークと学習過程を共有するウェブ調べ学習環境の提案",year=2012,city="Kagoshima",country="",month="January ",date=21 ,volume="-1",number="-1",page="71-74")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j71
+a.authors.add(a91)
+a.authors.add(a9)
+a.authors.add(a92)
+a.authors.add(a7)
+a.save()
+a=Article(title="ハイパー学習空間の構築による知識洗練化支援",year=2012,city="Kagoshima",country="",month="January ",date=21 ,volume="-1",number="-1",page="77-82")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j71
+a.authors.add(a86)
+a.authors.add(a74)
+a.save()
+j72=Journal(publisher="",name="人工知能学会 先進的学習科学と工学研究会資料, SIG-ALST-B102")
+j72.save()
+a=Article(title="主体的学習における知識洗練化を指向した知識外化手法",year=2011,city="Okayama",country="",month="November ",date=19 ,volume="-1",number="-1",page="35-40")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j72
+a.authors.add(a86)
+a.authors.add(a74)
+a.save()
+j73=Journal(publisher="",name="電気関係学会四国支部連合大会 講演論文集")
+j73.save()
+a=Article(title="プレゼンテーション・リハーサルにおける発表者の知識洗練のためのスライド作成支援",year=2011,city="Tokushima",country="",month="September ",date=23 ,volume="-1",number="-1",page="289")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j73
+a.authors.add(a90)
+a.authors.add(a74)
+a.save()
+j74=Journal(publisher="",name="教育システム情報学会 第36回全国大会 講演論文集")
+j74.save()
+a=Article(title="ソーシャルブックマークを用いた探求学習のための学習目標アウェアネス提示手法の提案",year=2011,city="Hiroshima",country="",month="August ",date=31 ,volume="-1",number="-1",page="98-99")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j74
+a.authors.add(a92)
+a.authors.add(a9)
+a.authors.add(a7)
+a.save()
+a=Article(title="プレゼンテーション・リハーサルにおけるレビュアの指摘を整理・検討するための議論支援システム",year=2011,city="Hiroshima",country="",month="September ",date=1 ,volume="-1",number="-1",page="182-183")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j74
+a.authors.add(a89)
+a.authors.add(a74)
+a.authors.add(a75)
+a.save()
+a=Article(title="探求学習時の学習目標に着目した逆引きリファレンス作成環境の構築",year=2011,city="Iwate",country="",month="June ",date=3 ,volume="-1",number="-1",page="")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j-1
+a.authors.add(a9)
+a.authors.add(a91)
+a.authors.add(a92)
+a.authors.add(a7)
+a.save()
+a=Article(title="主体的学習における知識洗練化を指向した知識外化手法",year=2011,city="Iwate",country="",month="June ",date=3 ,volume="-1",number="-1",page="")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j-1
+a.authors.add(a86)
+a.authors.add(a74)
+a.save()
+j75=Journal(publisher="",name="Technical Reports on Information and Computer Science from Kochi, Vol.3, No.7")
+j75.save()
+a93=Author(j_givenname="弘康",j_surname="江渕")
+a93.save()
+a=Article(title="学習コンテンツ推薦のためのユーザ習熟度とアイテム難易度の推定手法",year=2011,city="",country="",month="None",date=None,volume="-1",number="-1",page="")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j75
+a.authors.add(a93)
+a.authors.add(a9)
+a.save()
+j76=Journal(publisher="",name="Technical Reports on Information and Computer Science from Kochi, Vol.3, No.8")
+j76.save()
+a94=Author(j_givenname="翼",j_surname="江見")
+a94.save()
+a=Article(title="研究意欲促進を目的としたオンラインコミュニケーション活性化支援",year=2011,city="",country="",month="None",date=None,volume="-1",number="-1",page="")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j76
+a.authors.add(a94)
+a.authors.add(a9)
+a.save()
+j77=Journal(publisher="",name="Technical Reports on Information and Computer Science from Kochi, Vol.3, No.9")
+j77.save()
+a=Article(title="クラウドコンピューティングを活用したWeb探求学習支援環境の構築",year=2011,city="",country="",month="None",date=None,volume="-1",number="-1",page="")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j77
+a.authors.add(a91)
+a.authors.add(a9)
+a.save()
+j78=Journal(publisher="",name="2011年春 JSiSE 学生研究発表会")
+j78.save()
+a=Article(title="主体的学習における知識洗練化を指向した知識外化手法の提案",year=2011,city="Kagawa",country="",month="March ",date=7 ,volume="-1",number="-1",page="278-279")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j78
+a.authors.add(a86)
+a.authors.add(a74)
+a.save()
+j79=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 (vol.110, no.453) ET2010-136")
+j79.save()
+a95=Author(j_givenname="博紀",j_surname="西森")
+a95.save()
+a=Article(title="プレゼンテーション構造に着目したプレゼンテーション・リハーサルにおける議論支援環境の構築",year=2011,city="Tokushima",country="",month="March ",date=4 ,volume="-1",number="-1",page="253-258")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j79
+a.authors.add(a95)
+a.authors.add(a74)
+a.authors.add(a75)
+a.save()
+j80=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 (vol.110, no.453) ET2010-105")
+j80.save()
+a=Article(title="研究意欲促進を目的とした研究室オンラインコミュニケーション活性化支援",year=2011,city="Tokushima",country="",month="March ",date=4 ,volume="-1",number="-1",page="79-82")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j80
+a.authors.add(a9)
+a.authors.add(a94)
+a.save()
+j81=Journal(publisher="",name="教育システム情報学会研究報告 vol.25, no.5 (2011-1)")
+j81.save()
+a=Article(title="ソーシャルブックマークを用いた探求学習のための学習目標アウェアネス",year=2011,city="Tokyo",country="",month="January ",date=29 ,volume="-1",number="-1",page="43-46")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j81
+a.authors.add(a92)
+a.authors.add(a9)
+a.authors.add(a7)
+a.save()
+j82=Journal(publisher="",name="教育システム情報学会 第35回全国大会 講演論文集")
+j82.save()
+a=Article(title="プレゼンテーション・リハーサルにおける議論フェーズ支援に関する検討",year=2010,city="Sapporo",country="",month="August ",date=27 ,volume="-1",number="-1",page="453-454")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j82
+a.authors.add(a95)
+a.authors.add(a74)
+a.authors.add(a75)
+a.save()
+a96=Author(j_givenname="高明",j_surname="大林")
+a96.save()
+a=Article(title="読書習慣化支援のためのしおり型読書履歴記録デバイスの開発",year=2010,city="Sapporo",country="",month="August ",date=27 ,volume="-1",number="-1",page="369-370")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j82
+a.authors.add(a96)
+a.authors.add(a9)
+a.save()
+j83=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 (vol.110, no.67) ET2010-05")
+j83.save()
+a97=Author(j_givenname="美弥",j_surname="入野")
+a97.save()
+a=Article(title="学術書籍の難易度を読者ネットワークから推定する試み",year=2010,city="Kusatsu",country="",month="May ",date=28 ,volume="-1",number="-1",page="19-24")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j83
+a.authors.add(a9)
+a.authors.add(a97)
+a.save()
+j84=Journal(publisher="",name="2010年春 JSiSE 学生研究発表会")
+j84.save()
+a=Article(title="教育・学習支援システムにおけるユーザ操作履歴の活用方法の検討",year=2010,city="Kagawa",country="",month="March ",date=15 ,volume="-1",number="-1",page="235-236")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j84
+a.authors.add(a90)
+a.authors.add(a74)
+a.save()
+a=Article(title="アプリケーション間通信に着目した市販ソフトウェアの教育利用",year=2010,city="Kagawa",country="",month="March ",date=15 ,volume="-1",number="-1",page="231-232")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j84
+a.authors.add(a89)
+a.authors.add(a74)
+a.save()
+j85=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 ET2009-110")
+j85.save()
+a98=Author(j_givenname="剛志",j_surname="宮脇")
+a98.save()
+a=Article(title="プレゼンテーション構造を利用した指摘のグループ化によるリハーサルレビュー支援方法",year=2010,city="Kochi",country="",month="March ",date=5 ,volume="-1",number="-1",page="43-46")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j85
+a.authors.add(a98)
+a.authors.add(a74)
+a.authors.add(a75)
+a.save()
+a=Article(title="習慣化支援SNSの設計に向けた事前調査",year=2009,city="Nagoya",country="",month="August ",date=19-21 ,volume="-1",number="-1",page="10-11")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j17
+a.authors.add(a9)
+a.authors.add(a74)
+a.authors.add(a7)
+a.authors.add(a19)
+a.save()
+j86=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 ET2008-98")
+j86.save()
+a99=Author(j_givenname="雄仁",j_surname="中川")
+a99.save()
+a=Article(title="ソーシャルブックマークとの連携による年表推薦機能を持つ年表作成システムと評価",year=2009,city="Kagawa",country="",month="March ",date=7 ,volume="-1",number="-1",page="29-34")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j86
+a.authors.add(a99)
+a.authors.add(a9)
+a.authors.add(a10)
+a.authors.add(a7)
+a.authors.add(a19)
+a.save()
+j87=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 ET2008-103")
+j87.save()
+a=Article(title="プレゼンテーションリハーサル・レビュー支援システムの構築 — レビュー結果の視覚的提示によるプレゼンテーション改善支援 —",year=2009,city="Kagawa",country="",month="March ",date=7 ,volume="-1",number="-1",page="59-64")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j87
+a.authors.add(a98)
+a.authors.add(a74)
+a.authors.add(a75)
+a.save()
+a=Article(title="習慣化支援を目的としたSNSのデザイン",year=2008,city="Kumamoto",country="",month="September ",date=3-5 ,volume="-1",number="-1",page="12-13")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j20
+a.authors.add(a9)
+a.authors.add(a74)
+a.save()
+a=Article(title="プレゼンテーション構造に着目したリハーサルレビュー支援方法の検討",year=2008,city="Kumamoto",country="",month="September ",date=3-5 ,volume="-1",number="-1",page="72-73")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j20
+a.authors.add(a98)
+a.authors.add(a74)
+a.authors.add(a75)
+a.save()
+j88=Journal(publisher="",name="電子情報通信学会 第二種研究会資料 (Webインテリジェンスとインタラクション) WI2-2008-41")
+j88.save()
+a=Article(title="SBMとの連携による年表推薦機能を持つ歴史年表作成システム",year=2008,city="Hyogo",country="",month="July ",date=18-19 ,volume="-1",number="-1",page="77-76")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j88
+a.authors.add(a99)
+a.authors.add(a9)
+a.authors.add(a10)
+a.authors.add(a19)
+a.save()
+j89=Journal(publisher="",name="人工知能学会 先進的学習科学と工学研究会資料 SIG-ALST-A801")
+j89.save()
+a=Article(title="ハイパービデオのリアルタイム生成と配信を用いたプレゼンテーション・レビュー支援システム",year=2008,city="Tokyo",country="",month="June ",date=7 ,volume="-1",number="-1",page="37-42")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j89
+a.authors.add(a74)
+a.authors.add(a75)
+a.save()
+a100=Author(j_givenname="昭継",j_surname="村上")
+a100.save()
+a=Article(title="WebDAVを用いたeコンテンツサーバ(EDB/CMS)の開発",year=2007,city="",country="",month="September ",date=None,volume="-1",number="-1",page="721-722")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j22
+a.authors.add(a9)
+a.authors.add(a44)
+a.authors.add(a100)
+a.authors.add(a19)
+a.save()
+a=Article(title="ソーシャル年表作成システムの開発",year=2007,city="",country="",month="September ",date=12-14 ,volume="-1",number="-1",page="")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j23
+a.authors.add(a99)
+a.authors.add(a9)
+a.authors.add(a10)
+a.authors.add(a7)
+a.authors.add(a19)
+a.save()
+j90=Journal(publisher="",name="電子情報通信学会 教育工学研究会 技術研究報告 ET2006-129")
+j90.save()
+a=Article(title="リアルタイムなハイパービデオ化によるプレゼンテーション・レビュー支援環境の構築",year=2007,city="",country="",month="None",date=None,volume="-1",number="-1",page="133-138")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j90
+a.authors.add(a74)
+a.authors.add(a75)
+a.save()
+a101=Author(j_givenname="貴彦",j_surname="妻鳥")
+a101.save()
+a=Article(title="外化支援ツールによる科学思考の育成に向けて",year=2006,city="",country="",month="None",date=None,volume="-1",number="-1",page="377-378")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j24
+a.authors.add(a7)
+a.authors.add(a74)
+a.authors.add(a9)
+a.authors.add(a101)
+a.authors.add(a10)
+a.authors.add(a19)
+a.save()
+a102=Author(j_givenname="隆三",j_surname="井手")
+a102.save()
+a=Article(title="ソーシャルブックマークシステムの学習支援への活用",year=2006,city="",country="",month="November ",date=None,volume="-1",number="-1",page="457-458")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j24
+a.authors.add(a9)
+a.authors.add(a102)
+a.authors.add(a99)
+a.authors.add(a19)
+a.save()
+a=Article(title="プレゼンテーションのリアルタイムなハイパービデオ化によるレビュー支援環境のデザイン",year=2006,city="",country="",month="None",date=None,volume="-1",number="-1",page="703-704")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j24
+a.authors.add(a74)
+a.authors.add(a75)
+a.save()
+j91=Journal(publisher="",name="日本ソフトウェア科学会 ネットワークが創発する知能研究会 第2回ワークショップ JWEIN2006 講演論文集")
+j91.save()
+a=Article(title="タグとリンクによるフォークソノミの提案",year=2006,city="",country="",month="September ",date=None,volume="-1",number="-1",page="27-28")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j91
+a.authors.add(a9)
+a.save()
+j92=Journal(publisher="",name="電子情報通信学会 技術研究報告")
+j92.save()
+a=Article(title="科学的思考の外化をおこなうための内省支援ツールの授業実践に向けて",year=2006,city="",country="",month="None",date=None,volume="105",number="632",page="87-90")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j92
+a.authors.add(a7)
+a.authors.add(a74)
+a.authors.add(a9)
+a.authors.add(a101)
+a.authors.add(a10)
+a.authors.add(a19)
+a.save()
+j93=Journal(publisher="",name="教育システム情報学会 第31回全国大会 講演論文集")
+j93.save()
+a=Article(title="ソーシャルブックマークを用いた年表作成支援",year=2006,city="",country="",month="August ",date=None,volume="-1",number="-1",page="145-146")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j93
+a.authors.add(a99)
+a.authors.add(a9)
+a.authors.add(a7)
+a.authors.add(a19)
+a.save()
+a=Article(title="ソーシャルブックマークにおけるブックマーク間のリンクに基づく探求学習支援",year=2006,city="",country="",month="August ",date=None,volume="-1",number="-1",page="477-478")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j93
+a.authors.add(a102)
+a.authors.add(a9)
+a.authors.add(a19)
+a.save()
+j94=Journal(publisher="",name="教育システム情報学会 研究報告")
+j94.save()
+a=Article(title="シラバス科目間の関連性を用いた学習経路検索支援",year=2005,city="",country="",month="November ",date=None,volume="20",number="4",page="7-12")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j94
+a.authors.add(a9)
+a.authors.add(a44)
+a.authors.add(a69)
+a.authors.add(a70)
+a.authors.add(a19)
+a.authors.add(a71)
+a.save()
+a=Article(title="徳島大学における無線ネットワーク認証基盤とその運用",year=2005,city="",country="",month="October ",date=None,volume="",number="101",page="61-66")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j29
+a.authors.add(a9)
+a.authors.add(a44)
+a.authors.add(a10)
+a.authors.add(a7)
+a.authors.add(a49)
+a.authors.add(a50)
+a.authors.add(a19)
+a.save()
+j95=Journal(publisher="",name="教育システム情報学会 30周年記念全国大会 講演論文集")
+j95.save()
+a=Article(title="徳島大学 教育·研究者情報データベースを活用した講義概要 (シラバス) の作成と利用",year=2005,city="",country="",month="August ",date=None,volume="-1",number="-1",page="553-554")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j95
+a.authors.add(a9)
+a.authors.add(a44)
+a.authors.add(a69)
+a.authors.add(a19)
+a.save()
+j96=Journal(publisher="",name="教育システム情報学会 第29回全国大会 講演論文集")
+j96.save()
+a=Article(title="語句用法の知識定着のための復習契機を気付かせるフレームワークの提案",year=2004,city="",country="",month="None",date=None,volume="-1",number="-1",page="347-348")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j96
+a.authors.add(a9)
+a.authors.add(a7)
+a.authors.add(a74)
+a.authors.add(a46)
+a.authors.add(a19)
+a.save()
+a=Article(title="マルチ・チャネルなコミュニケーション場における知識洗練ワークベンチの設計",year=2004,city="",country="",month="None",date=None,volume="-1",number="-1",page="417-418")
+a.save()
+a.language=japanese
+a.check=False
+a.journal=j96
+a.authors.add(a75)
+a.authors.add(a74)
+a.save()

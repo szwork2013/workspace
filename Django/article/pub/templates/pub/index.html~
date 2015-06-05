@@ -1,0 +1,10 @@
+{%if lates_poll_list%}
+	<ul>
+		{%for article in latest_article_list%}
+		<li><a href="/pub/{{article.id}}/">{{article.title}}</a></li>
+		{%endfor%}
+	</ul>
+{%else%}
+	<p>No polls are available.</p>
+{%endif%}
+in index.html
