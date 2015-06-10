@@ -18,7 +18,9 @@ def knock30():
 	m_lines=read_line("neko.txt.mecab")
 	#
 	for m_line in m_lines:
-		surface=get_text_re()
+		if m_line is "EOS":
+			continue
+		surface=get_text_re(m_line,r"\A(?P<surface>[^\t]+?)\t(?P<pos>.+?),","surface")
 		base=get_text_re()
 		pos=get_text_re()
 		pos1=get_text_re()
