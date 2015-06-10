@@ -45,23 +45,13 @@ def get_list_re(m_text,m_expression,m_num_group=0,m_flag_multi=0):
 				m_list_hit.append(m_text_hit.group(m_num_group))
 	return m_list_hit
 
-def get_text_re(m_text,m_expression,m_num_group=0,m_flag_multi=0):
-	m_buffer=StringIO.StringIO(m_text)
-	m_lines=m_buffer.readlines()
-	m_list_hit=[]
-
-	if m_flag_multi>0:
-		# for m_line in m_lines:
-		# 	m_text_hit=re.search(m_expression,m_line,re.MULTILINE)
-		m_text_hit=re.search(m_expression,m_text.decode("utf-8"),re.MULTILINE|re.DOTALL)
-		if m_text_hit:
-			m_list_hit.append(m_text_hit.group(m_num_group))
-	else:
-		for m_line in m_lines:
-			m_text_hit=re.search(m_expression,m_line)
-			if m_text_hit:
-				m_list_hit.append(m_text_hit.group(m_num_group))
-	return m_list_hit
+#よく考えると、抜き出す最小単位はこっちなんだよな
+#上はこれをリスト型に使う、ってだけで。よし、今度からもっと分解して作るようにしよう
+#あと、拡張しやすいように正規表現はcompileでやるように
+def get_text_re(m_text,m_expression,m_num_group=0):
+	m_pattern=re.compile(m_expression)
+	m_text_hit=m_pattern.search(m_text)
+	return m_text_hit.group(m_num_group)
 
 #名前は一時的、上のをバージョンアップし、複数の型と、グループに対応させた
 def get_list_re2(m_object,m_expression,m_num_group):
