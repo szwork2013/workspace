@@ -20,14 +20,18 @@ def knock30():
 	for m_line in m_lines:
 		if m_line is "EOS":
 			continue
-		surface=get_text_re(m_line,r"\A(?P<surface>[^\t]+?)\t(?P<pos>.+?),","surface")
-		base=get_text_re()
-		pos=get_text_re()
-		pos1=get_text_re()
-		if surface and base and pos and pos1
-
-	#m_list_morph=make_list_morph(m_lines)
-	#pp(m_map_morph)
+		surface=get_text_re(m_line,r"\A(?P<surface>[^\t]+?)\t(?P<pos>.+?)\,(?P<pos1>.+?)\,(?P<pos2>.+?)\,(?P<pos3>.+?)\,(?P<conjForm>.+?)\,(?P<conjType>.+?)\,(?P<base>.+?)\,(?P<read>.+?)\,(?P<pron>.+?)","surface")
+		pos=get_text_re(m_line,r"\A(?P<surface>[^\t]+?)\t(?P<pos>.+?)\,(?P<pos1>.+?)\,(?P<pos2>.+?)\,(?P<pos3>.+?)\,(?P<conjForm>.+?)\,(?P<conjType>.+?)\,(?P<base>.+?)\,(?P<read>.+?)\,(?P<pron>.+?)","pos")
+		pos1=get_text_re(m_line,r"\A(?P<surface>[^\t]+?)\t(?P<pos>.+?)\,(?P<pos1>.+?)\,(?P<pos2>.+?)\,(?P<pos3>.+?)\,(?P<conjForm>.+?)\,(?P<conjType>.+?)\,(?P<base>.+?)\,(?P<read>.+?)\,(?P<pron>.+?)","pos1")
+		base=get_text_re(m_line,r"\A(?P<surface>[^\t]+?)\t(?P<pos>.+?)\,(?P<pos1>.+?)\,(?P<pos2>.+?)\,(?P<pos3>.+?)\,(?P<conjForm>.+?)\,(?P<conjType>.+?)\,(?P<base>.+?)\,(?P<read>.+?)\,(?P<pron>.+?)","base")
+		if surface and base and pos and pos1:
+			m_dict_morph={
+				"surface":surface,
+				"pos":pos,
+				"pos1":pos1,
+				"base":base
+			}
+			m_list_morph.append(m_dict_morph)
 	return m_list_morph
 """
 zenbun=inlines
