@@ -51,7 +51,10 @@ def get_list_re(m_text,m_expression,m_num_group=0,m_flag_multi=0):
 def get_text_re(m_text,m_expression,m_num_group=0):
 	m_pattern=re.compile(m_expression)
 	m_text_hit=m_pattern.search(m_text)
-	return m_text_hit.group(m_num_group)
+	if m_text_hit:
+		return m_text_hit.group(m_num_group)
+	else:
+		return ""
 
 #名前は一時的、上のをバージョンアップし、複数の型と、グループに対応させた
 def get_list_re2(m_object,m_expression,m_num_group):

@@ -16,6 +16,7 @@ import MeCab
 def knock30():
 	m_lines=[]
 	m_lines=read_line("neko.txt.mecab")
+	m_list_morph=[]
 	#
 	for m_line in m_lines:
 		if m_line is "EOS":
@@ -33,6 +34,43 @@ def knock30():
 			}
 			m_list_morph.append(m_dict_morph)
 	return m_list_morph
+def knock31(m_map_neko):
+	m_list_surface_verb=[]
+	for m_word in m_map_neko:
+		if m_word["pos"] == u"動詞":
+			m_list_surface_verb.append(m_word["surface"])
+	print pp(m_list_surface_verb)
+
+def knock32(m_map_neko):
+	m_list_base_verb=[]
+	for m_word in m_map_neko:
+		if m_word["pos"] == u"動詞":
+			m_list_base_verb.append(m_word["base"])
+	print pp(m_list_base_verb)
+
+def knock33(m_map_neko):
+	m_list_noun_sahen=[]
+	for m_word in m_map_neko:
+		if m_word["pos"] == u"名詞" and m_word["pos1"].find(u"サ変")!=-1:
+			m_list_noun_sahen.append(m_word["surface"])
+	print pp(m_list_noun_sahen)
+	
+def knock34(m_map_neko):
+	m_list_phrase_noun=[]
+	for m_count in range(0,len(m_map_neko)):
+		if m_map_neko[m_count]["surface"]==u"の":
+			if m_map_neko[m_count-1]["pos"]==u"名詞" and m_map_neko[m_count+1]["pos"]==u"名詞":
+				m_list_phrase_noun.append(m_map_neko[m_count-1]["surface"]+u"の"+m_map_neko[m_count+1]["surface"])
+				#m_phrase_noun=""
+				#m_phrase_noun.join(m_map_neko[m_count+1]["surface"])
+				#m_list_phrase_noun.append(m_phrase_noun)
+			print m_map_neko[m_count]["surface"]
+
+	pp(m_list_phrase_noun)
+	
+def knock35(m_map_neko):
+	pass
+
 """
 zenbun=inlines
 inline=[我輩：（(surface:名詞),(base:)）,は:(形態素),]
@@ -93,4 +131,11 @@ if __name__=="__main__":
 	print "あいうえお　愛"
 	print sys.getdefaultencoding()
 	m_map_neko=knock30()
+	#knock31(m_map_neko)
+	#knock32(m_map_neko)
+	#knock32(m_map_neko)
+	#knock33(m_map_neko)
+	knock34(m_map_neko)
+	knock35(m_map_neko)
+	#print m_map_neko
 
