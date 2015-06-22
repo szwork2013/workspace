@@ -135,7 +135,7 @@ if __name__=="__main__":
 	#knock32(m_map_neko)
 	#knock32(m_map_neko)
 	#knock33(m_map_neko)
-	knock34(m_map_neko)
+	#knock34(m_map_neko)
 	knock35(m_map_neko)
 	#print m_map_neko
 
