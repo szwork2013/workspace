@@ -36,7 +36,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     templateUrl: "templates/tabs.html"
   })
 
-  // Each tab has its own nav history stack:
+  // Each tab has its own nav history stack:ここなへんは分からなかったらAngularUIRouterで調べたらいい
 
   .state('tab.dash', {
     url: '/dash',

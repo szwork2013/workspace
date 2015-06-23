@@ -5,6 +5,10 @@ import StringIO
 from function_common import *
 import pprint
 import MeCab
+#単語数え上げよう
+from collections import Counter
+import numpy as np
+import matplotlib.pyplot as plt
 
 #def make_list_morph(m_list_mprph):
 
@@ -68,7 +72,57 @@ def knock34(m_map_neko):
 
 	pp(m_list_phrase_noun)
 	
+#ここまで分解すればよかった
+def get_list_words(m_map_word):
+	m_list_words=[]
+	for m_word in m_map_word:
+		m_list_words.append(m_word["surface"].decode("utf-8"))
+	return m_list_words
+
+def get_counter_word_from_map(m_map_word):
+	m_list_words=[]
+	for m_word in m_map_word:
+		m_list_words.append(m_word["surface"].decode("utf-8"))
+		# if m_dict_word_counted.has_key(m_word["surface"]):
+		# 	m_dict_word_counted[m_word["surface"]]+=1
+		# elif m_word != u"":
+		# 	m_dict_word_counted[m_word["surface"]]=1
+	#そのまま数え上げるより、カウンターオブジェクト作ったほうが後で使いやすい
+	m_counter_word=Counter(m_list_words)
+	return m_counter_word
+	#print m_counter_word.most_common(10)
+
 def knock35(m_map_neko):
+	pass
+
+def knock36(m_map_neko):
+	#単語とその数をvalueとした辞書をもらう
+	m_counter=get_counter_word_from_map(m_map_neko)
+	for m_word,m_count in m_counter.most_common():
+		print m_count,m_word.decode("utf-8")
+
+	#plt.hist(m_count.most_common(10))
+	
+
+def knock37(m_map_neko):
+	m_words_most_common_10=[]
+	m_counter=get_counter_word_from_map(m_map_neko)
+	m_counter_most_common = m_counter.most_common(10)
+	m_list_words_most_common_10=list(m_counter_most_common)
+	fontprop = matplotlib.font_manager.FontProperties(fname="/usr/share/fonts/truetype/fonts-japanese-gothic.ttf")
+	# m_dict_words_counter=
+	for m_word,m_count in m_list_words_most_common_10:
+	 	for i in range(0,m_count):
+	 		m_words_most_common_10.append(m_word)
+	plt.hist(m_words_most_common_10)
+	plt.show()
+	print m_words_most_common_10
+	
+
+def knock38(m_map_neko):
+	pass
+
+def knock39(m_map_neko):
 	pass
 
 """
@@ -136,6 +190,10 @@ if __name__=="__main__":
 	#knock32(m_map_neko)
 	#knock33(m_map_neko)
 	#knock34(m_map_neko)
-	knock35(m_map_neko)
+	#knock35(m_map_neko)
+	#knock36(m_map_neko)
+	knock37(m_map_neko)
+	knock38(m_map_neko)
+	knock39(m_map_neko)
 	#print m_map_neko
 
