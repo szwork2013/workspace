@@ -1,0 +1,23 @@
+<ion-side-menus>
+
+  <!-- センターエリア -->
+  <ion-pane ion-side-menu-content>
+
+    <!-- ion-nav-bar は各ion-view側で上書きすることもできる -->
+    <ion-nav-bar class="bar-dark">
+      <ion-nav-back-button class="button-clear">
+        <i class="icon ion-chevron-left"></i> back
+      </ion-nav-back-button>
+    </ion-nav-bar>
+
+    <!-- 各テンプレート埋め込み -->
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <!-- 左メニュー -->
+  <ng-include src="'components/menu/left_menu.html'"></ng-include>
+
+  <!-- 右メニュー -->
+  <ng-include src="'components/menu/right_menu.html'"></ng-include>
+
+</ion-side-menus>

@@ -1,0 +1,38 @@
+<ion-view title="<i class='ion-search'></i> 新着投稿">
+
+  <ion-nav-bar class="bar-balanced">
+    <ion-nav-back-button class="button-clear">
+      <i class="icon ion-chevron-left"></i> back
+    </ion-nav-back-button>
+    <ion-nav-buttons side="right">
+      <button class="button button-clear" ng-click="reload()">
+        <i class="ion-refresh"></i>
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content padding="true" style="background: ghostwhite">
+
+    <div align="center" style="font-size: 10px; color: dimgray">
+      新着30件を表示しています。
+    </div>
+
+    <ion-list>
+      <ion-item ng-repeat="item in items"
+                can-swipe="false"
+                class="item-thumbnail-left">
+        <img ng-src="{{item.user.profile_image_url}}">
+        <h5>{{item.user.url_name}} が{{item.created_at_in_words}}前に投稿しました。</h5>
+        <p>
+          {{item.title}}
+        </p>
+        <p align="right">
+          <a class="button button-balanced button-small" ng-href="{{item.url}}" target="_blank">
+            Qiita で見る
+          </a>
+        </p>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>
