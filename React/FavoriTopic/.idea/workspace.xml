@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="875073f1-392e-44d0-8cd3-857bcdde9b09" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/hooks/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDV.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVAvailability.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVAvailabilityDeprecated.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVConfigParser.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVConfigParser.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVDebug.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVHandleOpenURL.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVHandleOpenURL.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVJSON.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVJSON.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVJSON_private.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVJSON_private.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVPlugin.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVPlugin.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVPluginResult.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVPluginResult.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVShared.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVTimer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVTimer.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVViewController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVViewController.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVWhitelist.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/CDVWhitelist.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/NSData+Base64.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/NSData+Base64.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/CordovaLib.xcodeproj/project.pbxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/CordovaLib_Prefix.pch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/VERSION" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/CordovaLib/cordova.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova.xcodeproj/project.pbxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Classes/AppDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Classes/AppDelegate.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Classes/MainViewController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Classes/MainViewController.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Classes/MainViewController.xib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/HelloCordova-Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/HelloCordova-Prefix.pch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Plugins/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/icons/icon-40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/icons/icon-40@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/icons/icon-50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/icons/icon-50@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/icons/icon-60.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/icons/icon-60@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/icons/icon-60@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/icons/icon-72.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/icons/icon-72@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/icons/icon-76.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/icons/icon-76@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/icons/icon-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/icons/icon-small@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/icons/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/icons/icon@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/splash/Default-568h@2x~iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/splash/Default-667h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/splash/Default-736h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/splash/Default-Landscape-736h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/splash/Default-Landscape@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/splash/Default-Landscape~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/splash/Default-Portrait@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/splash/Default-Portrait~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/splash/Default@2x~iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/Resources/splash/Default~iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/HelloCordova/main.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/apple_ios_version" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/apple_osx_version" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/apple_xcode_version" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/build-debug.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/build-release.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/build.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/check_reqs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/clean" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/clean.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/console.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/defaults.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/lib/build.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/lib/check_reqs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/lib/clean.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/lib/copy-www-build-step.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/lib/list-devices" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/lib/list-emulator-images" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/lib/list-started-emulators" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/lib/run.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/lib/spawn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/lib/start-emulator" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/lib/versions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/node_modules/nopt/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/node_modules/nopt/lib/nopt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/node_modules/nopt/node_modules/abbrev/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/node_modules/nopt/node_modules/abbrev/abbrev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/node_modules/nopt/node_modules/abbrev/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/node_modules/nopt/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/node_modules/q/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/node_modules/q/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/node_modules/q/q.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/node_modules/q/queue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/node_modules/shelljs/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/node_modules/shelljs/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/node_modules/shelljs/shell.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/run" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/run.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/version" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/cordova/version.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/platform_www/cordova-js-src/exec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/platform_www/cordova-js-src/platform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/platform_www/cordova.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/www/cordova-js-src/exec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/www/cordova-js-src/platform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/www/cordova.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/www/cordova_plugins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/www/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/www/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/www/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/ios/www/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/platforms/platforms.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/plugins/cordova-plugin-whitelist/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/plugins/cordova-plugin-whitelist/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/plugins/cordova-plugin-whitelist/NOTICE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/plugins/cordova-plugin-whitelist/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/plugins/cordova-plugin-whitelist/RELEASENOTES.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/plugins/cordova-plugin-whitelist/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/plugins/cordova-plugin-whitelist/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/plugins/cordova-plugin-whitelist/src/android/WhitelistPlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/plugins/cordova-plugin-whitelist/src/ios/CDVNavigationWhitelistPlugin.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/plugins/cordova-plugin-whitelist/src/ios/CDVNavigationWhitelistPlugin.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/plugins/cordova-plugin-whitelist/whitelist.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/plugins/fetch.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/plugins/ios.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/www/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/www/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/www/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_cordova/www/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_rn/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_rn/.idea/FavoriTopic.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_rn/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_rn/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_rn/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_rn/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_rn/public/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../FavoriTopic_rn/public/scripts/app.js" afterPath="" />
+    </list>
+    <ignored path="FavoriTopic.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="FavoriTopic" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.ios.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.ios.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.08467742">
+              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.ios.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="1337" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FavoriTopic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FavoriTopic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FavoriTopic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="settings.phonegap" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="JavaScriptLanguageLevel" value="JSX" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="875073f1-392e-44d0-8cd3-857bcdde9b09" name="Default" comment="" />
+      <created>1437616685465</created>
+      <option name="number" value="Default" />
+      <updated>1437616685465</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="1337" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.ios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08467742">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
