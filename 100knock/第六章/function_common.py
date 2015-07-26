@@ -1,6 +1,6 @@
 
+# coding:utf-8
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
 import sys,json,codecs,re,StringIO,urllib,urllib2
 from xml.dom.minidom import parse as parseXML
 
@@ -15,6 +15,12 @@ if __name__=="__main__":
 	print "function_common"
 	pass
 
+#単純にファイルをオープンする
+def open_file(m_filename):
+	m_file_open=codecs.open(m_filename,"r","utf-8")
+	m_lines=m_file_open.read()
+	m_file_open.close()
+	return m_lines
 
 #ファイルを行単位で読み込んでリストとして返す()
 def read_line(m_filename):
