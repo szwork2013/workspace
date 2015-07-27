@@ -32,6 +32,12 @@ class Morph:
         self.pos=""
         self.pos1=""
 
+class Chunk:
+    def __init__(self):
+        self.morphs=[]
+        self.dst=0
+        self.srcs=[]
+
 
 def knock40():
     m_lines = []
@@ -66,12 +72,48 @@ def knock40():
     print m_list_morph[2].pos1.decode("utf-8")
     return m_list_morph
 
-def knock31(m_map_neko):
-    m_list_surface_verb = []
-    for m_word in m_map_neko:
-        if m_word["pos"] == u"動詞":
-            m_list_surface_verb.append(m_word["surface"])
-    print pp(m_list_surface_verb)
+def divide_scripts_all_to_one_from_cabocha_kc(filename):
+    m_lines=[]
+    m_lines=read_line("neko.txt.cabocha")
+    #EOS区切りで文を塊として持つ
+    return
+
+def make_chunks_from_script_one(scripts_all):
+    #*区切りで、*をセットとしてテキストの塊をつくる
+    #更にそれを分解してチャンクにする
+    pass
+
+def make_chunks_from_cabocha_kc(filename):
+    chunks=[]
+    chunks_all=[]
+    scripts_all=divide_scripts_all_to_one_from_cabocha_kc(filename)
+    for script_one in scripts_all:
+        chunks=make_chunks_from_script_one(script_one)
+        chunks_all.append(chunks)
+    #make_chunks(scripts_all)
+
+
+#できるだけ小さい区切りで関数化する
+def knock41():
+    m_lines = []
+    m_lines = read_line("neko.txt.cabocha")
+    m_list_morph = []
+    scripts_all_neko=[]
+
+    #全文を区切りのいいところでまとめて一文ごとに分ける
+    #更に一文をChunk分けする
+    #そしたらそれをmorphとか独自の携帯にして格納
+
+    #divide_scripts_all_to_one_from_cabocha_kc(m_lines)
+    scripts_all_neko=make_chunks_from_cabocha_kc("neko.txt.cabocha")
+    for script_one_neko in scripts_all_neko[8]:
+        for chunk_neko in script_one_neko:
+            for morph_neko in chunk_neko.morphs:
+                print morph_neko.surface
+            print "dist is "+morph_neko.dst
+
+    return
+
 
 
 def knock32(m_map_neko):
@@ -255,8 +297,8 @@ if __name__ == "__main__":
     print "python"
     print "あいうえお　愛"
     print sys.getdefaultencoding()
-    m_map_neko = knock40()
-    # knock41(m_map_neko)
+    knock40()
+    knock41()
     # knock42(m_map_neko)
     # knock42(m_map_neko)
     # knock43(m_map_neko)

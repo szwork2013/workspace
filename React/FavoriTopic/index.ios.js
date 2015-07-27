@@ -16,6 +16,10 @@ var {
   StyleSheet,
   Text,
   View,
+    ScrollView,
+    TouchableOpacity,
+    Image,
+    PanResponder,
 } = React;
 
 var FavoriTopic = React.createClass({
