@@ -1,0 +1,71 @@
+/* ---------------
+ pager
+--------------- */
+.acms-pager {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	.font-size(13);
+	color: #333;
+	.clearfix();
+
+	// ページ
+	li {
+		float: left;
+		margin-left: 4px;
+		text-align: center;
+		// 最初の1件
+		&:first-child {
+			margin-left: 0;
+		}
+		// リンク
+		> a:link {
+			text-decoration: none;
+		}
+		// フォントカラー
+		span > a {
+			color: #333;
+		}
+		// ページの見栄え
+		> a,
+		> span {
+			.btn;
+			.btn-color;
+		}
+		// hover
+		span:hover,
+		> a:hover {
+			border: 1px solid #A5A5A5;
+			.btn-color-hover;
+			text-decoration: none;
+		}
+		&.cur span {
+			border: 1px solid #AAA;
+			background: #CCC;
+			text-decoration: none;
+		}
+		// active
+		> a:active {
+			border: 1px solid #AAA;
+			.btn-color-active;
+			text-decoration: none;
+		}
+	}
+}
+
+// スマホ対応
+@media screen and (max-width: 768px) {
+	.acms-pager {
+		margin-left: 10px;
+		margin-right: 10px;
+		// ページ
+		li {
+			
+			> a,
+			> span {
+				.font-size(15);
+				padding: 14px;
+			}
+		}
+	}
+}

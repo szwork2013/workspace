@@ -1,0 +1,11 @@
+{request_user}[raw]さんから<!-- BEGIN approval:touch#request -->
+承認依頼されました。<!-- END approval:touch#request --><!-- BEGIN approval:touch#reject -->申請が却下されました。<!-- END approval:touch#reject -->
+エントリータイトル : {entryTitle}[raw]
+バージョン名 : {version}[raw]
+ブログ名 : %{BLOG_NAME}
+<!-- BEGIN deadline_date:veil -->
+期限日 : {deadline_date}<!-- END deadline:veil -->
+コメント : {request_comment}[raw]
+<!-- BEGIN approval2:touch#request -->
+以下のリンクより、内容を確認して承認をお願いします。<!-- END approval2:touch#request --><!-- BEGIN approval2:touch#reject -->申請が却下されました。以下のリンクより内容を確認し、「変更」ボタンを押して再度承認依頼して下さい。<!-- END approval2:touch#reject -->
+{revisionUrl}

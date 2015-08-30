@@ -1,0 +1,1 @@
+<!-- BEGIN approval:touch#request -->承認依頼されました。<!-- END approval:touch#request --><!-- BEGIN approval:touch#reject -->申請が却下されました。<!-- END approval:touch#reject --> [{entryTitle} / {version}]

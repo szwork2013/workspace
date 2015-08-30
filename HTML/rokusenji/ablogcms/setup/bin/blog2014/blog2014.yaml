@@ -1,0 +1,1360 @@
+---
+category: ''
+column: ''
+config: ''
+  - 
+    config_key: 'tpl_entry_edit'
+    config_value: 'index.html'
+    config_sort: 8
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'tpl_admin'
+    config_value: 'admin.html'
+    config_sort: 7
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'tpl_404'
+    config_value: '404.html'
+    config_sort: 6
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'tpl_detail'
+    config_value: 'index.html'
+    config_sort: 5
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'tpl_index'
+    config_value: 'index.html'
+    config_sort: 4
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'tpl_top'
+    config_value: 'index.html'
+    config_sort: 3
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'load_yaml_tpl'
+    config_value: 'on'
+    config_sort: 2
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'theme'
+    config_value: 'blog2014'
+    config_sort: 1
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'tpl_entry_add'
+    config_value: 'index.html'
+    config_sort: 9
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'tpl_login'
+    config_value: 'login.html'
+    config_sort: 10
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_eximage_size_group'
+    config_value: 'column_eximage_size'
+    config_sort: 125
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_eximage_size_group'
+    config_value: 'column_eximage_display_size'
+    config_sort: 124
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_eximage_size_label'
+    config_value: '大 ( 長辺640px )'
+    config_sort: 123
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_eximage_size_label'
+    config_value: '中 ( 長辺310px )'
+    config_sort: 122
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_eximage_size_label'
+    config_value: '小 ( 長辺200px )'
+    config_sort: 121
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_eximage_size'
+    config_value: 640
+    config_sort: 120
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_eximage_size'
+    config_value: 310
+    config_sort: 119
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_eximage_size'
+    config_value: 200
+    config_sort: 118
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_eximage_display_size'
+    config_value: 100
+    config_sort: 117
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_eximage_display_size'
+    config_value: 50
+    config_sort: 116
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_eximage_display_size'
+    config_value: 33.3
+    config_sort: 115
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_youtube_size_group'
+    config_value: 'column_youtube_size_label'
+    config_sort: 114
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_youtube_size_group'
+    config_value: 'column_youtube_size'
+    config_sort: 113
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_youtube_size_group'
+    config_value: 'column_youtube_display_size'
+    config_sort: 112
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_youtube_size_label'
+    config_value: '大 (640x360)'
+    config_sort: 111
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_youtube_size_label'
+    config_value: '中 (480x270)'
+    config_sort: 110
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_youtube_size_label'
+    config_value: '小 (310x174)'
+    config_sort: 109
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_youtube_size'
+    config_value: '640x360'
+    config_sort: 108
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_youtube_size'
+    config_value: '480x270'
+    config_sort: 107
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_youtube_size'
+    config_value: '310x174'
+    config_sort: 106
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_youtube_display_size'
+    config_value: 100
+    config_sort: 105
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_youtube_display_size'
+    config_value: 75
+    config_sort: 104
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_youtube_display_size'
+    config_value: 50
+    config_sort: 103
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_map_size_group'
+    config_value: 'column_map_size_label'
+    config_sort: 102
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_map_size_group'
+    config_value: 'column_map_size'
+    config_sort: 101
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_map_size_group'
+    config_value: 'column_map_display_size'
+    config_sort: 100
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_map_size_label'
+    config_value: '大 (640x360)'
+    config_sort: 99
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_map_size_label'
+    config_value: '中 (310x310)'
+    config_sort: 98
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_map_size_label'
+    config_value: '小 (200x200)'
+    config_sort: 97
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_map_size'
+    config_value: '640x360'
+    config_sort: 96
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_map_size'
+    config_value: '310x310'
+    config_sort: 95
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_map_size'
+    config_value: '200x200'
+    config_sort: 94
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_map_display_size'
+    config_value: 100
+    config_sort: 93
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_map_display_size'
+    config_value: 50
+    config_sort: 92
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_map_display_size'
+    config_value: 33.3
+    config_sort: 91
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_image_size_group'
+    config_value: 'column_image_size_label'
+    config_sort: 90
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_image_size_group'
+    config_value: 'column_image_size'
+    config_sort: 89
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_image_size_group'
+    config_value: 'column_image_display_size'
+    config_sort: 88
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_image_size_group'
+    config_value: 'column_image_size_criterion'
+    config_sort: 87
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_size_label'
+    config_value: '大 ( 横640px )'
+    config_sort: 86
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_size_label'
+    config_value: '中 ( 横310px )'
+    config_sort: 85
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_size_label'
+    config_value: '小 ( 横200px )'
+    config_sort: 84
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_size_label'
+    config_value: 'そのまま'
+    config_sort: 83
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_size'
+    config_value: 'width640'
+    config_sort: 82
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_size'
+    config_value: 'width310'
+    config_sort: 81
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_size'
+    config_value: 'width200'
+    config_sort: 80
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_size'
+    config_value: ''
+    config_sort: 79
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_display_size'
+    config_value: 100
+    config_sort: 78
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_display_size'
+    config_value: 50
+    config_sort: 77
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_display_size'
+    config_value: 33.3
+    config_sort: 76
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_display_size'
+    config_value: ''
+    config_sort: 75
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_size_criterion'
+    config_value: 'width'
+    config_sort: 74
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_size_criterion'
+    config_value: 'width'
+    config_sort: 73
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_size_criterion'
+    config_value: 'width'
+    config_sort: 72
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_image_size_criterion'
+    config_value: ''
+    config_sort: 71
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@nesting_unit_group'
+    config_value: 'unit_group_label'
+    config_sort: 70
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@nesting_unit_group'
+    config_value: 'unit_group_class'
+    config_sort: 69
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'unit_group_label'
+    config_value: '3カラム'
+    config_sort: 68
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'unit_group_label'
+    config_value: '2カラム'
+    config_sort: 67
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'unit_group_label'
+    config_value: '1カラム'
+    config_sort: 66
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'unit_group_label'
+    config_value: '---'
+    config_sort: 65
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'unit_group_class'
+    config_value: 'acms-col-4'
+    config_sort: 64
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'unit_group_class'
+    config_value: 'acms-col-6'
+    config_sort: 63
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'unit_group_class'
+    config_value: 'acms-column-clear'
+    config_sort: 62
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'unit_group_class'
+    config_value: ''
+    config_sort: 61
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_form_add_type_group'
+    config_value: 'column_form_add_type_label'
+    config_sort: 60
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_form_add_type_group'
+    config_value: 'column_form_add_type'
+    config_sort: 59
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_form_add_type_label'
+    config_value: 'チェックボックス'
+    config_sort: 58
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_form_add_type_label'
+    config_value: 'セレクト'
+    config_sort: 57
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_form_add_type_label'
+    config_value: 'ラジオ'
+    config_sort: 56
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_form_add_type_label'
+    config_value: 'テキストエリア'
+    config_sort: 55
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_form_add_type_label'
+    config_value: 'テキスト'
+    config_sort: 54
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_form_add_type'
+    config_value: 'checkbox'
+    config_sort: 53
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_form_add_type'
+    config_value: 'select'
+    config_sort: 52
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_form_add_type'
+    config_value: 'radio'
+    config_sort: 51
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_form_add_type'
+    config_value: 'textarea'
+    config_sort: 50
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_form_add_type'
+    config_value: 'text'
+    config_sort: 49
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_text_tag_group'
+    config_value: 'column_text_tag_extend_label'
+    config_sort: 48
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_text_tag_group'
+    config_value: 'column_text_tag_label'
+    config_sort: 47
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_text_tag_group'
+    config_value: 'column_text_tag'
+    config_sort: 46
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag_extend_label'
+    config_value: ''
+    config_sort: 45
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag_label'
+    config_value: 'マークダウン'
+    config_sort: 43
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag_label'
+    config_value: '自由入力'
+    config_sort: 42
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag_label'
+    config_value: '引用'
+    config_sort: 41
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag_label'
+    config_value: 'ソース'
+    config_sort: 40
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag_label'
+    config_value: 'テーブル'
+    config_sort: 39
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag_label'
+    config_value: '定義リスト'
+    config_sort: 38
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag_label'
+    config_value: '番号付きリスト'
+    config_sort: 37
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag_label'
+    config_value: 'リスト'
+    config_sort: 36
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag_label'
+    config_value: '見出し５'
+    config_sort: 35
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag_label'
+    config_value: '見出し４'
+    config_sort: 34
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag_label'
+    config_value: '見出し３'
+    config_sort: 33
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag_label'
+    config_value: '見出し２'
+    config_sort: 32
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag_label'
+    config_value: '本文'
+    config_sort: 31
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag'
+    config_value: 'markdown'
+    config_sort: 29
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag'
+    config_value: 'none'
+    config_sort: 28
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag'
+    config_value: 'blockquote'
+    config_sort: 27
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag'
+    config_value: 'pre'
+    config_sort: 26
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag'
+    config_value: 'table'
+    config_sort: 25
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag'
+    config_value: 'dl'
+    config_sort: 24
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag'
+    config_value: 'ol'
+    config_sort: 23
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag'
+    config_value: 'ul'
+    config_sort: 22
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag'
+    config_value: 'h5'
+    config_sort: 21
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag'
+    config_value: 'h4'
+    config_sort: 20
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag'
+    config_value: 'h3'
+    config_sort: 19
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag'
+    config_value: 'h2'
+    config_sort: 18
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_text_tag'
+    config_value: 'p'
+    config_sort: 17
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_add_type_group'
+    config_value: 'column_add_type_label'
+    config_sort: 16
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_add_type_group'
+    config_value: 'column_add_type'
+    config_sort: 15
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_add_type_label'
+    config_value: '画像URL'
+    config_sort: 14
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_add_type_label'
+    config_value: 'YouTube'
+    config_sort: 13
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_add_type_label'
+    config_value: '地図'
+    config_sort: 12
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_add_type_label'
+    config_value: 'ファイル'
+    config_sort: 11
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_add_type_label'
+    config_value: '画像'
+    config_sort: 10
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_add_type_label'
+    config_value: 'テキスト'
+    config_sort: 9
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_add_type'
+    config_value: 'eximage'
+    config_sort: 8
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_add_type'
+    config_value: 'youtube'
+    config_sort: 7
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_add_type'
+    config_value: 'map'
+    config_sort: 6
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_add_type'
+    config_value: 'file'
+    config_sort: 5
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_add_type'
+    config_value: 'image'
+    config_sort: 4
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'column_add_type'
+    config_value: 'text'
+    config_sort: 3
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'unit_group'
+    config_value: 'on'
+    config_sort: 2
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'entry_edit_inplace'
+    config_value: 'on'
+    config_sort: 1
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: '@column_eximage_size_group'
+    config_value: 'column_eximage_size_label'
+    config_sort: 126
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'entry_code_prefix'
+    config_value: 'entry-'
+    config_sort: 127
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'entry_code_extension'
+    config_value: 'html'
+    config_sort: 128
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'entry_code_title'
+    config_value: 'off'
+    config_sort: 129
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'image_size_large_criterion'
+    config_value: 'width'
+    config_sort: 130
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'image_size_large'
+    config_value: 'width1280'
+    config_sort: 131
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'image_size_tiny_criterion'
+    config_value: 'width'
+    config_sort: 132
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'image_size_tiny'
+    config_value: 'width320'
+    config_sort: 133
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'image_size_square'
+    config_value: 0
+    config_sort: 134
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'image_jpeg_quality'
+    config_value: 95
+    config_sort: 135
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_savename'
+    config_value: 'rawfilename'
+    config_sort: 136
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_prohibit_textfile'
+    config_value: 'on'
+    config_sort: 137
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_document'
+    config_value: 'txt'
+    config_sort: 138
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_document'
+    config_value: 'doc'
+    config_sort: 139
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_document'
+    config_value: 'pdf'
+    config_sort: 140
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_document'
+    config_value: 'ppt'
+    config_sort: 141
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_document'
+    config_value: 'xls'
+    config_sort: 142
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_document'
+    config_value: 'csv'
+    config_sort: 143
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_archive'
+    config_value: 'lzh'
+    config_sort: 144
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_archive'
+    config_value: 'zip'
+    config_sort: 145
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_archive'
+    config_value: 'rar'
+    config_sort: 146
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_archive'
+    config_value: 'gca'
+    config_sort: 147
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_archive'
+    config_value: 'sit'
+    config_sort: 148
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: '3gp'
+    config_sort: 149
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: '3g2'
+    config_sort: 150
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'asf'
+    config_sort: 151
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'avi'
+    config_sort: 152
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'dat'
+    config_sort: 153
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'fli'
+    config_sort: 154
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'flc'
+    config_sort: 155
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'flv'
+    config_sort: 156
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'mkv'
+    config_sort: 157
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'mpg'
+    config_sort: 158
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'mov'
+    config_sort: 159
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'mp4'
+    config_sort: 160
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'ogg'
+    config_sort: 161
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'qt'
+    config_sort: 162
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'rm'
+    config_sort: 163
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'ram'
+    config_sort: 164
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'rmvb'
+    config_sort: 165
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'str'
+    config_sort: 166
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'swf'
+    config_sort: 167
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'ts'
+    config_sort: 168
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'viv'
+    config_sort: 169
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'vob'
+    config_sort: 170
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'wmv'
+    config_sort: 171
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_movie'
+    config_value: 'amc'
+    config_sort: 172
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_audio'
+    config_value: 'aac'
+    config_sort: 173
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_audio'
+    config_value: 'ac3'
+    config_sort: 174
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_audio'
+    config_value: 'amr'
+    config_sort: 175
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_audio'
+    config_value: 'mmf'
+    config_sort: 176
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_audio'
+    config_value: 'mp2'
+    config_sort: 177
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_audio'
+    config_value: 'mp3'
+    config_sort: 178
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_audio'
+    config_value: 'mp4'
+    config_sort: 179
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_audio'
+    config_value: 'mpc'
+    config_sort: 180
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_audio'
+    config_value: 'ogg'
+    config_sort: 181
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_audio'
+    config_value: 'ra'
+    config_sort: 182
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_audio'
+    config_value: 'wav'
+    config_sort: 183
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+  - 
+    config_key: 'file_extension_audio'
+    config_value: 'wma'
+    config_sort: 184
+    config_rule_id: ''
+    config_module_id: ''
+    config_blog_id: 1
+comment: ''
+dashboard: ''
+entry: ''
+field: ''
+form: ''
+fulltext: ''
+moblog: ''
+module: ''
+rule: ''
+tag: ''
+trackback: ''
+schedule: ''
