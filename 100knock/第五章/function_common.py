@@ -110,7 +110,6 @@ def pplist(m_list):
 			print m_line.decode("utf-8")
 
 
-
 #JSONファイルを辞書のリストにして返す
 def read_json(m_filename):
 	m_data_json=[]
