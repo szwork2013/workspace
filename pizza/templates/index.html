@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="jumbotron" style="margin-top: 70px;">
+      <h2><i class="fa fa-shield"></i> セキュアピザへようこそ</h2>
+    </div>
+
+<div class="row">
+  $for item in pizzas:
+  <div class="col-xs-6 col-sm-4 col-md-3">
+    <div class="thumbnail">
+      <img src="${item.pic_file}" alt="${item.name}">
+      <div class="text-right"><span class="label ${item.sauce_color}">${item.sauce}</span></div>
+      <div class="caption">
+      <h4>${item.name}</h4>     <p>${item.desc}</p>
+      <p style="padding-left: 1.5em; line-height: 1.1;"><small>${item.ingredient}</small></p>
+      <blockquote>
+        <h5>Mサイズ / <b class="lead">${item.price_m}</b>円
+        $if item.cart_count_msize:
+          <span class="badge"><i class="fa fa-shopping-cart"></i> <b style="font-size: 12pt;">${item.cart_count_msize}</b>
+          <form method="post" style="display: inline;">
+            <input type="hidden" name="del_msize_pizza_id" value="${item.id}">
+            <input type="submit" value="&times;" style="background: none; border: none; padding: 0;">
+          </form></span>
+        $endif
+        </h5>
+        <form method="post">
+          <input type="hidden" name="add_msize_pizza_id" value="${item.id}">
+          <input type="submit" class="btn btn-default btn-sm" value="Mサイズをカートに追加">
+        </form>
+        <h5>Lサイズ / <b class="lead">${item.price_l}</b>円
+        $if item.cart_count_lsize:
+          <span class="badge"><i class="fa fa-shopping-cart"></i> <b style="font-size: 12pt;">${item.cart_count_lsize}</b>
+          <form method="post" style="display: inline;">
+            <input type="hidden" name="del_lsize_pizza_id" value="${item.id}">
+            <input type="submit" value="&times;" style="background: none; border: none; padding: 0;">
+          </form></span>
+        $endif
+        </h5>
+        <form method="post">
+          <input type="hidden" name="add_lsize_pizza_id" value="${item.id}">
+          <input type="submit" class="btn btn-default btn-sm" value="Lサイズをカートに追加">
+        </form>
+      </blockquote>
+      </div>
+    </div>
+  </div>
+  $if item.clearfix_md:
+  <div class="clearfix visible-md-block visible-lg-block"></div>
+  $endif
+  $if item.clearfix_sm:
+  <div class="clearfix visible-sm-block"></div>
+  $endif
+  $if item.clearfix_xs:
+  <div class="clearfix visible-xs-block"></div>
+  $endif
+  $endfor
+</div>

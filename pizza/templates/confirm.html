@@ -1,0 +1,28 @@
+  <h1 style="margin-top: 60px;">これらの商品を注文します</h1>
+  $if login_error:
+  <h1 style="margin-top: 60px;">${login_error}</h1>
+  $endif
+  
+  <table style="margin-left: 1em;">
+  $for p in pizzas:
+    <tr>
+      <th>${p['name']}</th>
+      <td>@${p['unit_price']} &times; ${p['count']}枚</td>
+      <td>${p['price']}</td>
+    </tr>
+  $endfor
+  </table>
+  
+  <hr>
+
+  $if anonymous:
+  <p>以上の商品を注文するにはログインしてください。</p>
+  $endif
+  $if login:
+  <form method="post" action="/wsgi/thanks">
+  $for p in pizzas:
+    <input type="hidden" name="order_${p['size']}size_pizza[${p['id']}]" value="${p['count']}">
+  $endfor
+    <input type="submit" value="注文を確定する">
+  </form>
+  $endif
