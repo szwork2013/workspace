@@ -1,0 +1,792 @@
+@charset "UTF-8";
+@import "base.css";
+
+/*=======================TOC=======================*/
+/*                                                 */
+/*                 01  Base                        */
+/*                 02  Container                   */
+/*                 03  Header                      */
+/*                 04  Navigation                  */
+/*                 05  Footer                      */
+/*                 06  Contents                    */
+/*                 07  Index                       */
+/*                 08  Dr                          */
+/*                 09  Clinic                      */
+/*                 10  Contact                     */
+/*                 11  General                     */
+/*                 12  Aesthe                      */
+/*                 13  Implant                     */
+/*                 14  Ortho                       */
+/*                 15  Prevent                     */
+/*                 16  Sitemap                     */
+/*                                                 */
+/*=======================TOC-END===================*/
+
+/*====================COLOR SCHEME=================*/
+/*                                                 */
+/*        Main Color - Green          #01a33e      */
+/*        Main Color - Dark Green     #306f3a      */
+/*        Main Color - Olive Green    #7c9d12      */
+/*                                                 */
+/*        Sub Color  - Blue           #2e7fb4      */
+/*                                                 */
+/*==================COLOR SCHEME-END===============*/
+
+/*================フォントサイズ換算===============*/
+/*                                                 */
+/*                   10px      77%                 */
+/*                   11px      85%                 */
+/*                   12px      93%                 */
+/*                   14px     108%                 */
+/*                   16px     124%                 */
+/*                                                 */
+/*===============フォントサイズ換算-END============*/
+
+
+
+/*---------- 01  Base -----------*/
+
+/*-- 冒頭の @import で外部CSSを読み込み --*/
+
+/*---------- 02  Container -----------*/
+
+body { background: url(../images/body_bg.jpg) top repeat-x; }
+
+#wrapper {
+	background: url(../images/wrapper_bg.jpg) repeat-y;
+	width: 800px;
+	margin: 0 auto;
+	padding: 0 1px;
+	text-align: left;
+}
+* html body #wrapper { width: 802px; }
+
+#main {
+	margin: 0;
+	width: 800px;
+	clear: both;
+	background: url(../images/main_bg.jpg) repeat-y;
+}
+
+#content {
+	width: 589px;
+	float: right;
+	font-size: 100%;
+	line-height: 1.6;
+	color: #666;
+	background: url(../images/content_bg.jpg) top left no-repeat;
+	padding: 0 0 1em 0;
+}
+* html body #content { background-position: 8px 0px; }
+
+
+/*---------- 03  Header -----------*/
+
+#header {
+	background: url(../images/header.jpg) black 0 0 no-repeat;
+	height: 334px;
+	width: 800px;
+	margin: 0;
+	padding: 0;
+}
+
+#top {
+	width: 264px;
+	height: 79px;
+	float: left;
+	margin-top:5px;
+}
+
+h1 {
+	text-indent:15px;
+	height:13px;
+	color:white;
+	font-size: 85%;
+}
+#header .section {
+	width: 183px;
+	float: right;
+	margin: 0;
+	padding: 18px 0 0 0;
+}
+
+#header p.tel {
+	margin: -13px 0 0 0;
+	padding: 0;
+	height: 79px;
+}
+#header p.tel img { display: block; }
+
+#header_nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 180px;
+	height: 19px;
+}
+
+#header_nav li {
+	height: 23px;
+	float: left;
+	text-indent: -9999px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#header_nav li a {
+	display: block;
+	height: 23px;
+}
+
+#nav01 { width: 66px; }
+#nav02 { width: 90px; }
+
+#nav01 a {
+	background: url(../images/header-nav.jpg) 0 0 no-repeat;
+	width: 66px;
+}
+#nav02 a {
+	background: url(../images/header-nav.jpg) -66px 0 no-repeat;
+	width: 90px;
+}
+
+#header #catch-copy {
+	margin: 0;
+	padding: 40px 0 0 30px;
+	clear: both;
+}
+
+
+/*----------04  Navigation -----------*/
+
+#nav {
+	width: 200px;
+	float: left;
+	padding: 0 0 20px 0;
+}
+
+#nav #left_nav {
+	height: 34px;
+	margin: 0;
+	padding: 0;
+	text-indent: -9999px;
+	line-height: 24px;
+	font-size: 24px;
+	background: url(../images/nav.jpg) 0 0 no-repeat;
+}
+
+#nav dl,
+#nav dl dt,
+#nav dl dd {
+	margin: 0;
+	padding: 0;
+}
+#nav dl {
+	padding-bottom: 3px;
+	background: url(../images/nav.jpg) left bottom no-repeat;
+}
+
+#nav dl dt,
+#nav dl dd {
+	height: 36px;
+	text-indent: -9999px;
+}
+
+#nav dl dd a {
+	display: block;
+	height: 36px;
+}
+
+#cat01 { background: url(../images/nav.jpg) 0 -34px no-repeat; }
+#nav03 a { background: url(../images/nav.jpg) 0 -70px no-repeat; }
+#nav04 a { background: url(../images/nav.jpg) 0 -106px no-repeat; }
+#nav05 a { background: url(../images/nav.jpg) 0 -142px no-repeat; }
+
+#cat02 { background: url(../images/nav.jpg) 0 -178px no-repeat; }
+#nav06 a { background: url(../images/nav.jpg) 0 -214px no-repeat; }
+#nav07 a { background: url(../images/nav.jpg) 0 -250px no-repeat; }
+#nav08 a { background: url(../images/nav.jpg) 0 -286px no-repeat; }
+#nav09 a { background: url(../images/nav.jpg) 0 -322px no-repeat; }
+#nav10 a { background: url(../images/nav.jpg) 0 -358px no-repeat; }
+#nav11 a { background: url(../images/nav.jpg) 0 -394px no-repeat; }
+
+
+#nav03 a:hover { background: url(../images/nav.jpg) -200px -70px no-repeat; }
+#nav04 a:hover { background: url(../images/nav.jpg) -200px -106px no-repeat; }
+#nav05 a:hover { background: url(../images/nav.jpg) -200px -142px no-repeat; }
+
+#nav06 a:hover { background: url(../images/nav.jpg) -200px -214px no-repeat; }
+#nav07 a:hover { background: url(../images/nav.jpg) -200px -250px no-repeat; }
+#nav08 a:hover { background: url(../images/nav.jpg) -200px -286px no-repeat; }
+#nav09 a:hover { background: url(../images/nav.jpg) -200px -322px no-repeat; }
+#nav10 a:hover { background: url(../images/nav.jpg) -200px -358px no-repeat; }
+#nav11 a:hover { background: url(../images/nav.jpg) -200px -394px no-repeat; }
+
+
+#nav p { text-align: center; }
+
+
+/*---------- 05  Footer -----------*/
+
+#footer {
+	clear: both;
+	padding: 0;
+	margin: 0;
+	width: 800px;
+	height: 88px;
+	background: #366837 url(../images/footer_bg.jpg) top repeat-x;
+	border-bottom: 4px solid #40463c;
+	font-size: 93%;
+	color: #f0f0f0;
+	position:relative;
+}
+
+
+#footer .maps {
+	position: absolute;
+	right: 10px;
+	top: 3px;
+}
+
+#footer a {
+	text-decoration: none;
+	color: #fff;
+}
+#footer a:hover { text-decoration: underline; }
+
+#footer ul,
+#footer dl {
+	list-style: none;
+	margin: 0 1em 2px 0;
+	padding: 0;
+	clear: both;
+}
+
+#footer ul li,
+#footer dl dt,
+#footer dl dd {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#footer p.alpha {
+	width: 230px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+#footer .beta {
+	width: 560px;
+	float: right;
+	padding: 18px 0 0 0;
+}
+
+#footer address {
+	padding: 18px 0 0 0;
+}
+
+
+/*---------- 06  Contents -----------*/
+
+.section { padding: .5em 30px 1em 30px; }
+.section .section { padding: .5em 10px 1em 10px; }
+.section .section .section { padding: .5em 0 1em 0; }
+
+p.center { text-align: center; }
+
+#content h2 {
+	height: 54px;
+	text-indent: -9999px;
+	margin: 0 24px;
+}
+#content h3 {
+	clear: both;
+	height: 46px;
+	text-indent: -9999px;
+}
+#content h4 {
+	height: 40px;
+	text-indent: -9999px;
+	margin-left: -10px;
+}
+
+#content h5 {
+	font-size: 108%;
+	font-weight: bold;
+	margin: 1em 0 .3em .3em;
+	color: #7c9d12;
+	letter-spacing: 1px;
+}
+
+#content ul li {
+	list-style: none;
+	background: url(../images/li.jpg) 0 5px no-repeat;
+	padding-left: 18px;
+}
+#content ul.olist li {
+	background-image: none;
+	padding-left: 0;
+}
+
+#content dt { font-weight: bold; }
+
+#content a { text-decoration: underline; }
+a {
+	color: #01a33e;
+	outline: none;
+}
+a:hover { color: #306f3a; }
+
+#content blockquote {
+	margin: .5em;
+	background: url(../images/blockquote_bg.jpg) top left repeat-y;
+	padding: .5em 1em;
+}
+
+.image_l  {
+	float: left;
+	margin: 0 13px 13px 0;
+}
+
+.image_r {
+	float: right;
+	margin: 0 0 16px 16px;
+}
+
+.case {
+	margin: 10px 25px;
+	background: url(../images/arrow_h.jpg) center 40% no-repeat;
+}
+.case-noimg {
+	margin: 10px 25px;
+	background-image: none;
+}
+.case-narrow {
+	margin: 10px 60px;
+	background: url(../images/arrow_h.jpg) center 40% no-repeat;
+}
+
+.case img,
+.case-noimg img,
+.case-narrow img { display: block; }
+
+.case .alpha,
+.case .beta {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+.case .gamma {
+	float: left;
+	margin: 0 0 10px 0;
+}
+
+p.case { margin: 10px 0; }
+
+.caption { text-align: center; }
+
+
+#content ul.totop {
+	clear: both;
+	padding-bottom: 20px;
+}
+
+#content ul.totop li {
+	list-style: none;
+	width: 152px;
+	height: 42px;
+	margin: 0;
+	padding: 0;
+	text-indent: -9999px;
+	float: right;
+	background-image: none;
+}
+#content ul.totop li a {
+	display: block;
+	height: 42px;
+	background: url(../images/to_top.jpg) 0 0 no-repeat;
+}
+
+p.caution {
+	padding-left: 24px;
+	background: url(../images/caution.jpg) 0 1px no-repeat;
+}
+
+/* Hides from IE-mac \*/
+p.answer:first-letter {
+	display: block;
+	padding: 2px;
+	color: #ccc;
+	font-size: 300%;
+	font-weight: normal;
+	margin: 0 5px 0 0;
+	float: left;
+	line-height: 1.0;
+}
+/* End hide from IE-mac */
+
+
+#content table {
+	border-collapse: collapse;
+	border: 2px solid #a4cf99;
+	font-size: 100%;
+	color: #666;
+	width: 500px;
+	margin-left: 20px;
+}
+
+#content table th,
+#content table td {
+	padding: 4px 12px;
+	border: 1px solid #ddddff;
+}
+
+#content table th {
+	background: #e6ede6;
+	color: #636570;
+}
+
+#content table tr.even th { background: #cfe3c8; }
+#content table tr.even td { background: #f6f6f6; }
+#content table td.price {
+	text-align: right;
+	width: 86px;
+}
+
+#content table span.require,
+span.require {
+	font-size: 140%;
+	font-weight: bold;
+	color: red;
+}
+input.submit {
+	font-weight: bold;
+	margin-right: 1.5em;
+}
+
+#content ol li {
+	border-bottom: 2px solid #eee;
+	padding-bottom: 1em;
+	margin: .5em 1em .5em .5em;
+}
+
+#content ol li span.title {
+	font-weight: bold;
+	display: block;
+}
+
+.detail {
+	text-align: right;
+	margin-right: .5em;
+}
+
+
+
+/*---------- 07  Index -----------*/
+
+#index h2#title01 {
+	background: url(../images/index_h2-01.jpg) 0 0 no-repeat;
+	height: 48px;
+}
+#index h3#title02 {
+	background: url(../images/index_h3-02.jpg) 0 0 no-repeat;
+	height: 40px;
+}
+#index h3#title03 {
+	background: url(../images/index_h3-03.jpg) 0 0 no-repeat;
+	height: 40px;
+}
+#index h4#title04 {
+	background: url(../images/index_h4-04.jpg) 0 0 no-repeat;
+	margin: 5px 0 0 0;
+	height: 24px;
+}
+
+#index #column_a {
+	width: 375px;
+	float: left;
+}
+
+#index #column_b {
+	width: 195px;
+	float: right;
+}
+
+#index #column_a #greeting,
+#index #column_a #clinic-info,
+#index #column_a #pickup { padding-left: 20px; }
+
+#index #column_a #clinic-info { padding: 1em 0 1em 20px; }
+
+#index #column_a #clinic-info .alpha {
+	width: 160px;
+	float: left;
+}
+#index #column_a #clinic-info .beta {
+	width: 180px;
+	float: right;
+}
+
+#index #column_a #clinic-info p.caution { margin-left: 1em; }
+
+#index #column_a #pickup ul {
+	margin: 0;
+	padding: 1em 0 1.5em 0;
+}
+#index #column_a #pickup ul li {
+	width: 170px;
+	margin: 0 10px 0 0;
+	padding: 0;
+	float: left;
+}
+#index #column_a #pickup ul li.nil { margin-right: 0; }
+
+
+#index #column_b dl { margin: 0 0 1em 0; }
+#index #column_b dt {
+	font-weight: normal;
+	color: #306f3a;
+}
+#index #column_b dd { margin: 0 0 1em 0; }
+
+
+
+/*---------- 08  Dr -----------*/
+
+#dr h2#title01 { background: url(../images/dr_h2-01.jpg) 0 0 no-repeat; }
+#dr h3#title02 { background: url(../images/dr_h3-02.jpg) 0 0 no-repeat; }
+#dr h4#title03 { background: url(../images/dr_h4-03.jpg) 0 0 no-repeat; }
+#dr h4#title04 { background: url(../images/dr_h4-04.jpg) 0 0 no-repeat; }
+#dr h4#title05 { background: url(../images/dr_h4-05.jpg) 0 0 no-repeat; }
+#dr h3#title06 { background: url(../images/dr_h3-06.jpg) 0 0 no-repeat; }
+
+#dr #content .alpha {
+	width: 160px;
+	float: left;
+}
+#dr #content .beta {
+	width: 330px;
+	float: right;
+}
+
+#dr #content dl { margin-left: 0; }
+#dr #content .beta dt {
+	width: 5em;
+	float: left;
+}
+#dr #content .beta dd { margin-left: 5em; }
+
+#dr #content .cv dt {
+	width: 7em;
+	float: left;
+	text-align: right;
+}
+#dr #content .cv dd { margin-left: 8em; }
+
+#dr #content .report {
+	border: 1px solid #ddd;
+}
+#dr #content .report dl dt {
+	color: #F44D90;
+	border-bottom: 3px double #eee;
+	background: url(../images/q.jpg) 0 center no-repeat;
+	padding-top: 10px;
+	padding-left: 30px;
+}
+#dr #content .report dl dd {
+	margin: 0 0 15px;
+	color: #799D12;
+}
+#dr #content .red {
+	color: #f94400;
+}
+
+
+/*---------- 09  Clinic -----------*/
+
+#clinic h2#title01 { background: url(../images/clinic_h2-01.jpg) 0 0 no-repeat; }
+#clinic h3#title02 { background: url(../images/clinic_h3-02.jpg) 0 0 no-repeat; }
+#clinic h3#title03 { background: url(../images/clinic_h3-03.jpg) 0 0 no-repeat; }
+#clinic h3#title04 { background: url(../images/clinic_h3-04.jpg) 0 0 no-repeat; }
+#clinic h3#title05 { background: url(../images/clinic_h3-05.jpg) 0 0 no-repeat; }
+
+#clinic #content #intro.section { background: url(../images/clinic_intro_bg.jpg) 280px 60px no-repeat; }
+#clinic #content #intro.section p { padding-right: 260px; }
+
+#map {
+	width: 500px;
+	height: 360px;
+	border: 2px solid #ccc;
+	margin: 18px;
+}
+
+#map h3 {
+	margin: 3px 0;
+	padding: 0;
+	text-indent: 0;
+	font-weight: bold;
+	font-size: 100%;
+	line-height: 1.2;
+	height: auto;
+}
+#map ul { margin-left: 0; }
+
+
+
+/*---------- 10  Contact -----------*/
+
+#contact h2#title01 { background: url(../images/contact_h2-01.jpg) 0 0 no-repeat; }
+#contact h3#title02 { background: url(../images/contact_h3-02.jpg) 0 0 no-repeat; }
+
+
+.grippie {
+	background:#eee url(../images/grippie.png) no-repeat scroll center 2px;
+	border-color:#ddd;
+	border-style:solid;
+	border-width:0 1px 1px;
+	cursor:s-resize;
+	height:9px;
+	overflow:hidden;
+}
+.resizable-textarea textarea {
+	display:block;
+	margin-bottom:0;
+}
+
+
+
+/*---------- 11  General -----------*/
+
+#general h2#title01 { background: url(../images/general_h2-01.jpg) 0 0 no-repeat; }
+#general h3#title02 { background: url(../images/general_h3-02.jpg) 0 0 no-repeat; }
+#general h3#title03 { background: url(../images/general_h3-03.jpg) 0 0 no-repeat; }
+#general h3#title04 { background: url(../images/general_h3-04.jpg) 0 0 no-repeat; }
+#general h4#title05 { background: url(../images/general_h4-05.jpg) 0 0 no-repeat; }
+#general h4#title06 { background: url(../images/general_h4-06.jpg) 0 0 no-repeat; }
+#general h4#title07 { background: url(../images/general_h4-07.jpg) 0 0 no-repeat; }
+#general h4#title08 { background: url(../images/general_h4-08.jpg) 0 0 no-repeat; }
+#general h4#title09 { background: url(../images/general_h4-09.jpg) 0 0 no-repeat; }
+#general h4#title10 { background: url(../images/general_h4-10.jpg) 0 0 no-repeat; }
+#general h4#title11 { background: url(../images/general_h4-11.jpg) 0 0 no-repeat; }
+#general h4#title12 { background: url(../images/general_h4-12.jpg) 0 0 no-repeat; }
+
+
+
+/*---------- 12  Aesthe -----------*/
+
+#aesthe h2#title01 { background: url(../images/aesthe_h2-01.jpg) 0 0 no-repeat; }
+#aesthe h3#title02 { background: url(../images/aesthe_h3-02.jpg) 0 0 no-repeat; }
+#aesthe h3#title03 { background: url(../images/aesthe_h3-03.jpg) 0 0 no-repeat; }
+#aesthe h3#title04 { background: url(../images/aesthe_h3-04.jpg) 0 0 no-repeat; }
+#aesthe h3#title05 { background: url(../images/aesthe_h3-05.jpg) 0 0 no-repeat; }
+#aesthe h4#title06 { background: url(../images/aesthe_h4-06.jpg) 0 0 no-repeat; }
+#aesthe h4#title07 { background: url(../images/aesthe_h4-07.jpg) 0 0 no-repeat; }
+#aesthe h4#title08 { background: url(../images/aesthe_h4-08.jpg) 0 0 no-repeat; }
+#aesthe h4#title09 { background: url(../images/aesthe_h4-09.jpg) 0 0 no-repeat; }
+#aesthe h4#title10 { background: url(../images/aesthe_h4-10.jpg) 0 0 no-repeat; }
+#aesthe h4#title11 { background: url(../images/aesthe_h4-11.jpg) 0 0 no-repeat; }
+#aesthe h4#title12 { background: url(../images/aesthe_h4-12.jpg) 0 0 no-repeat; }
+#aesthe h4#title13 { background: url(../images/aesthe_h4-13.jpg) 0 0 no-repeat; }
+#aesthe h4#title14 { background: url(../images/aesthe_h4-14.jpg) 0 0 no-repeat; }
+#aesthe h4#title15 { background: url(../images/aesthe_h4-15.jpg) 0 0 no-repeat; }
+#aesthe h4#title16 { background: url(../images/aesthe_h4-16.jpg) 0 0 no-repeat; }
+#aesthe h4#title17 { background: url(../images/aesthe_h4-17.jpg) 0 0 no-repeat; }
+#aesthe h4#title18 { background: url(../images/aesthe_h4-18.jpg) 0 0 no-repeat; }
+#aesthe h4#title19 { background: url(../images/aesthe_h4-19.jpg) 0 0 no-repeat; }
+#aesthe h3#title20 { background: url(../images/aesthe_h3-20.jpg) 0 0 no-repeat; }
+
+
+#aesthe #anq01{
+	width:165px;
+	float:left;
+	margin:0 15px 15px 0;
+}
+#aesthe #anq02{
+	width:165px;
+	float:left;
+	margin:0 15px 15px 0;
+}
+#aesthe #anq03{
+	width:165px;
+	float:left;
+	margin:0 0 15px 0;
+}
+
+#aesthe #content ol li {
+	border: 0;
+	padding-bottom: 0;
+	margin: .5em 1em .5em .5em;
+}
+#aesthe #content .tright p { text-align: right; }
+
+
+/*---------- 13  Implant -----------*/
+
+#implant h2#title01 { background: url(../images/implant_h2-01.jpg) 0 0 no-repeat; }
+#implant h3#title02 { background: url(../images/implant_h3-02.jpg) 0 0 no-repeat; }
+#implant h3#title03 { background: url(../images/implant_h3-03.jpg) 0 0 no-repeat; }
+#implant h3#title04 { background: url(../images/implant_h3-04.jpg) 0 0 no-repeat; }
+#implant h3#title05 { background: url(../images/implant_h3-05.jpg) 0 0 no-repeat; }
+#implant h4#title06 { background: url(../images/implant_h4-06.jpg) 0 0 no-repeat; }
+#implant h4#title07 { background: url(../images/implant_h4-07.jpg) 0 0 no-repeat; }
+#implant h4#title08 { background: url(../images/implant_h4-08.jpg) 0 0 no-repeat; }
+#implant h4#title09 { background: url(../images/implant_h4-09.jpg) 0 0 no-repeat; }
+#implant h4#title10 { background: url(../images/implant_h4-10.jpg) 0 0 no-repeat; }
+#implant h4#title11 { background: url(../images/implant_h4-11.jpg) 0 0 no-repeat; }
+
+#implant #content table th.subject { width: 160px; }
+#implant #content .tright p { text-align: right; }
+
+
+/*---------- 14  Ortho -----------*/
+
+#ortho h2#title01 { background: url(../images/ortho_h2-01.jpg) 0 0 no-repeat; }
+#ortho h3#title02 { background: url(../images/ortho_h3-02.jpg) 0 0 no-repeat; }
+#ortho h3#title03 { background: url(../images/ortho_h3-03.jpg) 0 0 no-repeat; }
+#ortho h3#title04 { background: url(../images/ortho_h3-04.jpg) 0 0 no-repeat; }
+#ortho h3#title05 { background: url(../images/ortho_h3-05.jpg) 0 0 no-repeat; }
+#ortho h4#title06 { background: url(../images/ortho_h4-06.jpg) 0 0 no-repeat; }
+#ortho h4#title07 { background: url(../images/ortho_h4-07.jpg) 0 0 no-repeat; }
+#ortho h4#title08 { background: url(../images/ortho_h4-08.jpg) 0 0 no-repeat; }
+
+
+
+/*---------- 15  Prevent -----------*/
+
+#prevent h2#title01 { background: url(../images/prevent_h2-01.jpg) 0 0 no-repeat; }
+#prevent h3#title02 { background: url(../images/prevent_h3-02.jpg) 0 0 no-repeat; }
+#prevent h3#title03 { background: url(../images/prevent_h3-03.jpg) 0 0 no-repeat; }
+#prevent h3#title04 { background: url(../images/prevent_h3-04.jpg) 0 0 no-repeat; }
+#prevent h4#title05 { background: url(../images/prevent_h4-05.jpg) 0 0 no-repeat; }
+
+
+
+/*---------- 16  Sitemap -----------*/
+
+#sitemap h2#title01 { background: url(../images/sitemap_h2-01.jpg) 0 0 no-repeat; }
+#sitemap h3#title02 { background: url(../images/sitemap_h3-02.jpg) 0 0 no-repeat; }
+
+/*---------- banner -----------*/
+.ban_sjcd a{
+	width:180px;
+	height:60px;
+	display:block;
+	text-indent:-9999px;
+	margin:0 10px;
+	background:url(../images/ban_sjcd.jpg);
+}
+.ban_sjcd a:hover{
+	background-position:0 100%;
+}
+
+.red{
+	color:#FF0000;
+}
+
+.toptxt {
+	position: absolute;
+	right: 303px;
+	top: 20px;
+	font-size: 80%;
+	color: #FFF;
+}

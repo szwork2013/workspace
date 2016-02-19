@@ -1,4 +1,4 @@
-#! /Users/yuta/.pyenv/shims/python3
+#! /Users/yuta/.pyenv/versions/3.4.1/bin/python3.4
 # coding: utf-8
 import re
 
