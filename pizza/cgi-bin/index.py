@@ -1,39 +1,30 @@
-#!/usr/bin/env python3.4
+#! /Users/yuta/.pyenv/versions/3.4.1/bin/python3.4
+# coding: utf-8
+
 from os import path
 from simplemapper import BaseMapper
 from simpletemplate import SimpleTemplate
 from model import UserMapper, PizzaMapper, OrderMapper, OrderPizzaMapper
-from http.cookies import SimpleCookie
-import auth, cart_manager
+# import sys
+# reload(sys)
+# sys.setdefaultencoding('utf8')
+import login
 
-import cgi
-form = cgi.FieldStorage()
-(username, cookie, error_message) = auth.login(form)
-
-login_status = False
-anonymous = True
-if username:
-    login_status = True
-    anonymous = False
+(username,cookie,error_message)=login.login()
 
 print("Content-type: text/html")
-if cookie:
-    print(cookie.output())
-
-(cart_count, msize_carts, lsize_carts, cookie) = cart_manager.check_cart(form)
-
-if cookie:
-    print(cookie.output())
-
-print()  # HTTPヘッダ終了
-
-#userid = form.getvalue('user', '')
-#password = form.getvalue('pass', '')
+import cgi
+form = cgi.FieldStorage()
+userid = form.getvalue('userid', '')
+password = form.getvalue('password', '')
 
 import sqlite3
+
+#login.login()
+
 conn = sqlite3.connect('cgi-bin/pizza.db')
 PizzaMapper.setconnection(conn)
-
+print(PizzaMapper);
 pizzas = list(PizzaMapper.select())
 for i, pizza in enumerate(pizzas):
     pizza.clearfix_xs = False
@@ -53,24 +44,24 @@ for i, pizza in enumerate(pizzas):
     else:
         pizza.sauce_color = 'label-danger'
     pizza.cart_count_msize = 0
-    if pizza.id in msize_carts: pizza.cart_count_msize = msize_carts[pizza.id]
+#     if pizza.id in self.msize_carts: pizza.cart_count_msize = self.msize_carts[pizza.id]
     pizza.cart_count_lsize = 0
-    if pizza.id in lsize_carts: pizza.cart_count_lsize = lsize_carts[pizza.id]
+#     if pizza.id in self.lsize_carts: pizza.cart_count_lsize = self.lsize_carts[pizza.id]
 
 value_dic = {
     'nav_index': True,
     'nav_cart': False,
     'nav_history': False,
     'pizzas': pizzas,
-    'login_error': error_message,
-    'username': username,
-    'login': login_status,
-    'anonymous': anonymous,
-    'cart_count': cart_count,
+    'login_error': False,
+    'username': '',
+    'login': False,
+    'anonymous': True,
+    'cart_count': 0,
 }
 
 html = u''
-filenames = ['head.html', 'nav.html', 'index.html', 'foot.html']
+filenames = ['head.html','head.html', 'nav.html', 'index.html', 'foot.html']
 for fname in filenames:
     p = path.join(path.dirname(__file__), '../templates', fname)
     t = SimpleTemplate(file_path=p)

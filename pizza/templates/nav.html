@@ -10,23 +10,23 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/cgi-bin/index.py"><i class="fa fa-shield"></i> セキュアピザ</a>
+      <a class="navbar-brand" href="/wsgi"><i class="fa fa-shield"></i> セキュアピザ</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav">
           $if nav_index:
-          <li class="active"><a href="/cgi-bin/index.py">商品一覧</a></li>
-          <li><a href="/cgi-bin/cart.py"><i class="fa fa-shopping-cart"></i> カート
+          <li class="active"><a href="/wsgi">商品一覧</a></li>
+          <li><a href="/wsgi/cart"><i class="fa fa-shopping-cart"></i> カート
               $if cart_count:
               <span class="badge">${cart_count}</span>
               $endif
           </a></li>
           $endif
           $if nav_cart:
-          <li><a href="/cgi-bin/index.py">商品一覧</a></li>
-          <li class="active"><a href="/cgi-bin/cart.py"><i class="fa fa-shopping-cart"></i> カート
+          <li><a href="/wsgi">商品一覧</a></li>
+          <li class="active"><a href="/wsgi/cart"><i class="fa fa-shopping-cart"></i> カート
               $if cart_count:
               <span class="badge">${cart_count}</span>
               $endif
@@ -34,12 +34,11 @@
           $endif
       </ul>
       $if anonymous:
-      <form method="post" class="navbar-form navbar-right" style="padding-top: 2px;">
+      <form method="post" action="login.py" class="navbar-form navbar-right" style="padding-top: 2px;">
         <div class="form-group">
             <input name="user" class="form-control input-sm" size="11" placeholder="ユーザ名">
             <input name="pass" class="form-control input-sm" size="11" placeholder="パスワード" type="password">
             <button type="submit" class="btn btn-default btn-sm"><i class="fa fa-sign-in"></i> ログイン</button>
-            <a href="/cgi-bin/signup.py">新規登録</a>
         </div>
       </form>
       $endif
@@ -51,7 +50,7 @@
             <li><a href="#">注文履歴</a></li>
             <li><a href="#">ユーザ登録内容の変更</a></li>
             <li class="divider"></li>
-            <li><a href="/cgi-bin/logout.py">ログアウト</a></li>
+            <li><a href="/wsgi/logout">ログアウト</a></li>
           </ul>
         </li>
       </ul>
