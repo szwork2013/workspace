@@ -1,0 +1,31 @@
+<!-- ライブラリ -->
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <meta lang="ja" charset="UTF-8">
+    <!-- ライブラリ -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- AngularJSの処理を記述する -->
+    <script type="text/javascript" src="js/checkform.js"></script>
+</head>
+<body>
+<div class="container" ng-controller="MyController as vm">
+    <h3>会員登録</h3>
+
+    <form name="myForm">
+        <!-- 3. エラー表示 -->
+        <div class="form-group" ng-class="{'has-error': myForm.name.$dirty && myForm.name.$invalid}">
+            <label class="control-label">氏名</label>*
+            <!-- 2. エラーメッセージ表示 -->
+            <small ng-if="myForm.name.$dirty && myForm.name.$error.required">必須です</small>
+            <!-- 1. 入力フォーム -->
+            <input type="text" class="form-control" name="name" ng-model="formData.name" ng-required="true" placeholder="田中太郎">
+        </div>
+    </form>
+
+</div>
+</body>
+</html>
